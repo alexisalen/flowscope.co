@@ -1,0 +1,5 @@
+Script para el menu
+Enlaces y saltos
+Subir a bitbucket
+Usar bootstrap para hacer el site responsive
+Terminar bloques
