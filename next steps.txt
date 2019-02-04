@@ -1,5 +1,4 @@
-Script para el menu
-Enlaces y saltos
-Subir a bitbucket
-Usar bootstrap para hacer el site responsive
-Terminar bloques
+Ajustar responisveness
+Arreglar menu
+Resolver porque muchas veces no se me toman los estilos
+Usar git eficientemente

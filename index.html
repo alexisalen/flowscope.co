@@ -3,9 +3,11 @@
 
 <head>
   <meta charset "UTF-8">
+  <meta name="viewport" content="with=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
   <title>Flowscope</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/custom.css">
   <link rel="icon" href="favicon.png" type="image/x-icon" />
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -14,16 +16,34 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
 </head>
 
-<!
-
->
-
 <body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapse_target">
+    <a class "navbar-brand"><img src="img/fs_logos_1.png"></a>
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Why?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">How?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">When?</a>
+      </li>
+    </ul>
+  </nav>
   <section class="hero">
-    <div class="hero-header">
+
+  <!--  <div class="hero-header">
       <a href="#">
         <img align=left class="logo" src="img/fs_logos_1.png">
-        <div class=navbar align=right>
+        <div align=right class="navbar">
           <a href="#">
             <span class="menu">Why?</span> </a>
           <a href="#">
@@ -33,6 +53,9 @@
 
         </div>
     </div>
+  -->
+
+</nav>
 
     <div class="hero-text">
       <h1>
@@ -91,6 +114,8 @@
 
   <section class="how">
     <div class="how-background-1">
+    <!--  <img align=center src="img/fs_ilu_1.png">-->
+      <img class="why-ilu-4" src="img/fs_ilu_4.png">
       <span class="how-parragraph"></p><strong>We love flowcharts</strong> because they give us the visual,</br> and lets us understand a process at a glance.</br>
       <strong>We love docs</strong> because they give us the much</br>needed detail to follow throughwith actionable steps.</p></span>
       <div class="how-bottom">
@@ -105,6 +130,49 @@
   <div class="why-grow">
   </div>
 
+<section class="how-features">
+
+ <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4 col-md-4 col-lg-4">
+    <img src="img/fs-ph-1.png">
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+          <p>Lorem Ipsum es simpstrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 col-md-4 col-lg-4">
+            <p>Lorem Ipsum eesde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. </p>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+              <img src="img/fs-ph-1.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <img src="img/fs-ph-1.png">
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+          <p>Lorem Ipsum eesde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="js/jquery.js"></script>
 </body>
 
 </html>
