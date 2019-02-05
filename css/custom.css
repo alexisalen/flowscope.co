@@ -1,5 +1,5 @@
 body, html {
-  height: 100%
+  height: 100%;
 }
 
 a {
@@ -246,14 +246,4 @@ button {
 
 .why-ilu-4 {
   position: relative;
-}
-
-.row {
-  border: 3px;
-  color: black;
-}
-
-.container{
-  border: 5px;
-  color: green;
 }
