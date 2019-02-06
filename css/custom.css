@@ -19,31 +19,81 @@ button {
   border-radius: 30px;
 }
 
-.hero {
+h1 {
+  font-size: 60px;
+  font-family: 'Open Sans';
+  font-weight: 800;
+}
+
+h3 {
+  position:static;
+  margin-top: 75px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Open Sans';
+}
+
+p {
+  width: 300px;
+  height: 50px;
+  font-size: 22px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.padding {
+  padding: 80px 0;
+}
+
+.row {
+  align-content: center;
+}
+
+
+#hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/fs_hero_2.png);
-  height: 725px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 725px;
   position: relative;
 }
 
-.logo {
-  padding-top: 35px;
-  position: fixed;
-  left: 20%;
+#why-1 {
+  width: 100%;
+  height: 725px;
+  color: #0087ed;
+  text-align: center;
+  align-items: center;
 }
 
-/*.navbar {
-  padding-top: 35px;
-  position: fixed;
-  right: 20%;
-}*/
+#why-2 {
+  width: 100%;
+  height: 725px;
+  background-color: #16bb9b;
+  text-align: center;
+  align-items: center;
+}
 
-.menu {
-  color: white;
-  padding-left: 20px;
-  font-family: 'Open Sans', sans-serif;
+#why-3 {
+  width: 100%;
+  height: 725px;
+  color: #0087ed;
+  text-align: center;
+  align-items: center;
+}
+
+#how {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/fs_back_1.png);
+  height: 1000px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: relative;
+  text-align: center;
 }
 
 .hero-text {
@@ -66,12 +116,6 @@ button {
   align-items: center;
 }
 
-.hero-title {
-  font-size: 60px;
-  font-family: 'Open Sans';
-  font-weight: 800;
-}
-
 .hero-tagline {
   font-size: 25px;
   font-family: 'Open Sans';
@@ -79,34 +123,7 @@ button {
 }
 
 .arrow {
-  padding: 20px;
-}
-
-.hero-bottom {
-  text-align: bottom;
-  font-size: 20px;
-  font-family: 'Open Sans';
-  font-weight: 300;
-}
-
-.why-background-1 {
-  width: 100%;
-  height: 725px;
-  color: #0087ed;
-  text-align: center;
-  align-items: center;
-}
-
-.why-tagline {
-  position: relative;
-  margin-right: 400px;
-  top: 250px;
-}
-
-.why-ilu-1 {
-  position: relative;
-  margin-left: 475px;
-  margin-top: 50px;
+  padding: 30px;
 }
 
 .docs-title-blue {
@@ -142,15 +159,79 @@ button {
   line-height: 1.5;
 }
 
-.why-background-2 {
+.how-parragraph {
+  top: 450px;
+  width: 550px;
+  height: 50px;
+  color: white;
+  font-size: 22px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+
+.how-features {
   width: 100%;
-  height: 725px;
-  background-color: #16bb9b;
+  height: 1000px;
+  background-color: white;
   text-align: center;
   align-items: center;
 }
 
-.why-tagline-2 {
+/*
+
+.how-bottom {
+  text-align: bottom;
+  margin-top: 480px;
+  font-size: 20px;
+  font-family: 'Open Sans';
+  font-weight: 800;
+  color: white;
+
+}
+
+.why-ilu-4 {
+  position: relative;
+}
+
+/*
+.navbar {
+  padding: 1% 0%;
+  font-size: 1.2em;
+}
+
+.navbar-brand {
+  min-height: 55px;
+  padding: 10px 600px 5px;
+
+}
+
+.navbar-default .navbar-nav li a {
+  color: #D5D5D5;
+}
+
+
+.logo {
+  padding-top: 35px;
+  position: fixed;
+  left: 20%;
+}
+
+.menu {
+  color: white;
+  padding-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/**.hero-title {
+  font-size: 60px;
+  font-family: 'Open Sans';
+  font-weight: 800;
+} NOT NEEDED */
+
+
+/*.why-tagline-2 {
   position: relative;
   text-align: left;
   margin-left: 800px;
@@ -176,7 +257,7 @@ button {
   line-height: 1.5;
 }
 
-.why-tagline-3 {
+/*.why-tagline-3 {
   position: relative;
   text-align: left;
   margin-left: 340px;
@@ -191,59 +272,16 @@ button {
   position: relative;
   margin-left: 475px;
   bottom: 50px;
-}
+}*/
 
-.why-bottom {
-  position:static;
-  margin-top: 75px;
-  text-align: center;
-  font-size: 20px;
-  font-family: 'Open Sans';
-  font-weight: 300;
-  color: #0087ed;
-}
-
-.how-background-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/fs_back_1.png);
-  height: 725px;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover;
+/*..why-tagline {
   position: relative;
-  text-align: center;
+  margin-right: 400px;
+  top: 250px;
 }
 
-.how-parragraph {
+why-ilu-1 {
   position: relative;
-  top: 450px;
-  width: 550px;
-  height: 50px;
-  color: white;
-  font-size: 22px;
-  font-family: 'Open Sans';
-  font-weight: 300;
-  line-height: 1.5;
-}
-
-.how-bottom {
-  text-align: bottom;
-  margin-top: 480px;
-  font-size: 20px;
-  font-family: 'Open Sans';
-  font-weight: 800;
-  color: white;
-
-}
-
-.how-features {
-  width: 100%;
-  height: 1000px;
-  background-color: white;
-  text-align: center;
-  align-items: center;
-}
-
-.why-ilu-4 {
-  position: relative;
-}
+  margin-left: 475px;
+  margin-top: 50px;
+} CHECK IF NEEDED */
