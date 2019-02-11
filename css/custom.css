@@ -20,7 +20,7 @@ button {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 70px;
   font-family: 'Open Sans';
   font-weight: 800;
 }
@@ -35,7 +35,7 @@ h3 {
 }
 
 p {
-  width: 300px;
+  width: 900px;
   height: 50px;
   font-size: 22px;
   font-family: 'Open Sans';
@@ -72,6 +72,7 @@ p {
 #why-2 {
   width: 100%;
   height: 725px;
+  color: #fff;
   background-color: #16bb9b;
   text-align: center;
   align-items: center;
@@ -129,12 +130,13 @@ p {
 .docs-title-blue {
   background-color: #0087ed;
   color: white;
-  padding: 10px 30px;
   font-size: 45px;
   font-family: 'Open Sans';
   font-weight: 600;
   margin-right: 150px;
+  padding: 10px 30px;
 }
+
 
 .docs-title-white {
   position: relative;
@@ -149,14 +151,12 @@ p {
   box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
 }
 
-.why-parragraph {
-  width: 300px;
-  height: 50px;
-  color: #0087ed;
-  font-size: 22px;
-  font-family: 'Open Sans';
-  font-weight: 400;
-  line-height: 1.5;
+.why-taglines {
+  position: relative;
+  text-align: left;
+  margin-left: 20px;
+  top: 100px;
+  color: white;
 }
 
 .how-parragraph {
@@ -170,7 +170,6 @@ p {
   line-height: 1.5;
 }
 
-
 .how-features {
   width: 100%;
   height: 1000px;
@@ -180,7 +179,6 @@ p {
 }
 
 /*
-
 .how-bottom {
   text-align: bottom;
   margin-top: 480px;
@@ -190,27 +188,6 @@ p {
   color: white;
 
 }
-
-.why-ilu-4 {
-  position: relative;
-}
-
-/*
-.navbar {
-  padding: 1% 0%;
-  font-size: 1.2em;
-}
-
-.navbar-brand {
-  min-height: 55px;
-  padding: 10px 600px 5px;
-
-}
-
-.navbar-default .navbar-nav li a {
-  color: #D5D5D5;
-}
-
 
 .logo {
   padding-top: 35px;
@@ -223,65 +200,3 @@ p {
   padding-left: 20px;
   font-family: 'Open Sans', sans-serif;
 }
-
-/**.hero-title {
-  font-size: 60px;
-  font-family: 'Open Sans';
-  font-weight: 800;
-} NOT NEEDED */
-
-
-/*.why-tagline-2 {
-  position: relative;
-  text-align: left;
-  margin-left: 800px;
-  top: 275px;
-  font-size: 60px;
-  font-family: 'Open Sans';
-  font-weight: 800;
-  color: white;
-}
-
-.why-ilu-2 {
-  position: relative;
-  margin-right: 300px;
-}
-
-.why-parragraph-2 {
-  width: 300px;
-  height: 50px;
-  color: white;
-  font-size: 22px;
-  font-family: 'Open Sans';
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-/*.why-tagline-3 {
-  position: relative;
-  text-align: left;
-  margin-left: 340px;
-  top: 200px;
-  font-size: 60px;
-  font-family: 'Open Sans';
-  font-weight: 800;
-  color: #0087ed;
-}
-
-.why-ilu-3 {
-  position: relative;
-  margin-left: 475px;
-  bottom: 50px;
-}*/
-
-/*..why-tagline {
-  position: relative;
-  margin-right: 400px;
-  top: 250px;
-}
-
-why-ilu-1 {
-  position: relative;
-  margin-left: 475px;
-  margin-top: 50px;
-} CHECK IF NEEDED */
