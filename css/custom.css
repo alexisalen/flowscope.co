@@ -1,5 +1,7 @@
 body, html {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -15,41 +17,43 @@ button {
   text-decoration: none;
   font-size: 20px;
   font-family: 'Open Sans';
-  font-weight: 300;
+  font-weight: 400;
   border-radius: 30px;
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 72px;
   font-family: 'Open Sans';
   font-weight: 800;
+}
+
+h2 {
+  font-size: 28px;
+  font-family: 'Open Sans';
+  font-weight: 400px;
 }
 
 h3 {
   position:static;
   margin-top: 75px;
   text-align: center;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 22px;
+  font-weight: 400;
   font-family: 'Open Sans';
 }
 
 p {
-  width: 900px;
-  height: 50px;
-  font-size: 22px;
+  width: 1000px;
+  font-size: 25px;
   font-family: 'Open Sans';
   font-weight: 400;
   line-height: 1.5;
-  padding: 40px 0;
+  padding: 30px 0;
+  text-align: center;
 }
 
 .padding {
   padding: 80px 0;
-}
-
-.row {
-  align-content: center;
 }
 
 #hero {
@@ -57,8 +61,11 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 725px;
   position:relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 #why-1 {
@@ -67,7 +74,7 @@ p {
   padding: 80px;
   color: #0088ee;
   text-align: center;
-  align-items: center;
+
 }
 
 #why-2 {
@@ -77,35 +84,39 @@ p {
   color: #fff;
   background-color: #16bb9b;
   text-align: center;
-  align-items: center;
 }
 
 #why-3 {
-  width: 80%;
+  width: 100%;
   display: inline-block;
   padding: 80px;
   color: #0088ee;
   text-align: center;
-  align-items: center;
 }
-
 
 
 #how {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/fs_back_1.png);
-  height: 1000px;
   width: 100%;
+  height: 1000px;
+  position:absolute;
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
-  position: relative;
   text-align: center;
+}
+
+#features {
+  width: 100%;
+  height: 1000px;
+  display: inline-block;
+  color: #0088ee;
 }
 
 .hero-text {
   position: absolute;
-  top: 65%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -113,24 +124,20 @@ p {
   align-items: center;
 }
 
-.hero-actions {
+.hero-play {
+  padding: 40px;
+}
+
+
+.hero-why {
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 50%;
+  width: 800px;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
   align-items: center;
-}
-
-.hero-tagline {
-  font-size: 25px;
-  font-family: 'Open Sans';
-  font-weight: 300;
-}
-
-.arrow {
-  padding: 30px;
 }
 
 .docs-title-blue {
@@ -145,7 +152,6 @@ p {
   bottom: 40px;
   margin-left: 30px;
 }
-
 
 .docs-title-white {
   background-color: white;
@@ -171,24 +177,40 @@ p {
 
 .how-parragraph {
   top: 450px;
-  width: 550px;
+  width: 800px;
   height: 50px;
   color: white;
-  font-size: 22px;
+  font-size: 30px;
   font-family: 'Open Sans';
   font-weight: 300;
   line-height: 1.5;
 }
 
-.how-features {
-  width: 100%;
-  height: 1000px;
-  background-color: white;
+.how-why {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   align-items: center;
 }
 
+.how-why-style {
+  color: white;
+  width: 800px;
+  font-size: 38px;
+  font-family: 'Open Sans';
+  font-weight: 800px;
+  padding-bottom: 40px;
+}
+
 /*
+.hero-tagline {
+  font-size: 25px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+
 .how-bottom {
   text-align: bottom;
   margin-top: 480px;
