@@ -27,6 +27,7 @@ Fix stylings
 Add call to actions
 Add terms and cond
 Test and go live
+AGREGAR TABLAS EN BLOCK DE HOW PARA EVITAR OVERLAY
 -->
 
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
@@ -57,7 +58,7 @@ Test and go live
       <img class="hero-play" align="center" src="img/fs_but_1.png"></br>
       <button>Join the waiting list</button></br>
     </div>
-    <div class="hero-why">
+    <div class="why">
       <h3>Why do you need a documentation tool?</h3></br>
       <img align=center src="img/fs_but_2.png">
     </div>
@@ -73,12 +74,14 @@ Test and go live
             </div>
           </div>
           <div class="col-sm-0 my-col col-md-6 my-col col-lg-6 my-col">
-            <img src="img/fs_ilu_1.png">
+            <img align="left" src="img/fs_ilu_1.png">
           </div>
         </div>
         <div class="row my-row">
-          <p><strong>Processes are often spread across different tools and assets.</strong></br>
-          Shared docs lost in limbo, old app accounts, physical notes in the</br>bin or even incomplete flowcharts can be a headache.</p>
+          <div class="col-sm-12 my-col">
+            <p><strong>Processes are often spread across different tools and assets.</strong></br>
+            Shared docs lost in limbo, old app accounts, physical notes in the</br>bin or even incomplete flowcharts can be a headache.</p>
+          </div>
         </div>
       </div>
   </section>
@@ -90,12 +93,14 @@ Test and go live
             <img src="img/fs_ilu_2.png">
           </div>
           <div class="col-sm-12 my-col col-lg-7 my-col">
-            <h1 align="left" class="why-taglines">Processes</br>Matter</h1>
+              <h1 align="left" class="why-taglines">Processes</br>Matter</h1>
           </div>
         </div>
         <div class="row my-row">
-          <p><strong>It can be challenging to make sure that your team is on the same page.</strong></br>
-          Helping your team perform essential business operations</br>translates into improved productivity and business efficiency.</p>
+          <div class="col-sm-12 my-col">
+            <p><strong>It can be challenging to make sure that your team is on the same page.</strong></br>
+            Helping your team perform essential business operations</br>translates into improved productivity and business efficiency.</p>
+          </div>
         </div>
       </div>
   </section>
@@ -111,25 +116,26 @@ Test and go live
           </div>
         </div>
         <div class="row my-row">
-          <p><strong>There are ton of new wiki, help-center, flowcharting and productivity tools.</strong></br>
-          While they serve a purpose they are a far from ideal solution</br>to keep organizational documents updated.</p>
+          <div class="col-sm-12 my-col">
+            <p><strong>There are ton of new wiki, help-center, flowcharting and productivity tools.</strong></br>
+            While they serve a purpose they are a far from ideal solution</br>to keep organizational documents updated.</p>
+          </div>
         </div>
       </div>
-      <div class="why-why">
+      <div>
         <h3>How are we solving this?</h3></br>
         <img align=center src="img/fs_but_3.png">
       </div>
   </section>
 
   <section id="how">
-      <div class="container my-container">
-        <img src="img/fs_ilu_4.png">
-        <span class="how-parragraph"></p><strong>We love flowcharts</strong> because they give us the visual,</br> and lets us understand a process at a glance.</br>
-          <strong>We love docs</strong> because they give us the much</br>needed detail to follow throughwith actionable steps.</p>
-        </span>
-      </div>
-    <div class="how-why">
-      <h2 class="how-why-style"><strong>So why not combine them</br>and make a single tool?</strong></h2></br>
+    <div class="container my-container">
+        <img align="center" src="img/fs_ilu_4.png"></br>
+        <p class="how-parragraph padding"><strong>We love flowcharts</strong> because they give us the visual,</br> and lets us understand a process at a glance.</br>
+        <strong>We love docs</strong> because they give us the much</br>needed detail to follow throughwith actionable steps.</p>
+    </div>
+    <div class="why why-how">
+      <h3 align="center" class="how-why-style"><strong>So why not combine them</br>and make a single tool?</strong></h2>
       <img align=center src="img/fs_but_2.png">
     </div>
   </section>
@@ -171,18 +177,18 @@ Test and go live
 </section>
 
 <section id="ready">
-    <div>
-      <h1>Ready to start flowscoping?</h1>
-      <p>We have seen flowscope document detailed operating procedures, map out marketing campaigns, systematize tha launch of new products and streamline the hire of new team members.</p>
-      <button>Join the waiting list</button></br>
-    </div>
+  <div class="container">
+      <h1 align="center" class="padding">Ready to start flowscoping?</h1>
+      <p align="center" class="padding">We have seen flowscope document detailed operating procedures, map out marketing campaigns, systematize tha launch of new products and streamline the hire of new team members.</p>
+      <button class="button-border">Join the waiting list</button></br>
+  </div>
 </section>
 
 <footer>
   <div class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
       <a href="#" class="navbar-brand">
-      <img align=left class="logo" src="img/fs-logos-2.png"></a>
+      <img class="logo" src="img/fs-logos-2.png"></a>
       <a href="#" >Terms of Service</a>
       <a href="#" >Privacy Policy</a>
     </div>
@@ -203,6 +209,25 @@ Test and go live
         <p><span class="hero-why">Why do you need a documentation tool?</span></p>
         <p><img class=bottom-arrow align=center src="img/fs_but_2.png"></p>
       </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="container my-container">
+        <div class="row my-row">
+          <img align="center" src="img/fs_ilu_4.png">
+        </div>
+        <div class="row my-row">
+          <span class="how-parragraph"></p><strong>We love flowcharts</strong> because they give us the visual,</br> and lets us understand a process at a glance.</br>
+          <strong>We love docs</strong> because they give us the much</br>needed detail to follow throughwith actionable steps.</p>
+          </span>
+        </div>
+        <div class="row my-row">
+          <div class="how-why">
+            <h2 class="how-why-style"><strong>So why not combine them</br>and make a single tool?</strong></h2></br>
+            <img align=center src="img/fs_but_2.png">
+          </div>
+        </div>
     </div>
   </section>
 
