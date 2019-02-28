@@ -22,7 +22,6 @@
 <body>
 
 <!--Pasos
-Revisar responsiveness
 Fix stylings
 Add call to actions
 Add terms and cond
@@ -30,26 +29,28 @@ Test and go live
 AGREGAR TABLAS EN BLOCK DE HOW PARA EVITAR OVERLAY
 -->
 
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+  <div class="container">
     <a href="#" class="navbar-brand">
-      <img align=left class="logo" src="img/fs_logos_1.png"></a>
+      <img align="left" class="logo" src="img/fs_logos_1.png"></a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#menu_navbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="menu_navbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Why?</a>
+          <a class="nav-link" href="#why-1">Why?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">How?</a>
+          <a class="nav-link" href="#how">How?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">When?</a>
+          <a class="nav-link" href="#ready">When?</a>
         </li>
       </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <section id="hero">
     <div class="hero-text">
@@ -60,12 +61,13 @@ AGREGAR TABLAS EN BLOCK DE HOW PARA EVITAR OVERLAY
     </div>
     <div class="why">
       <h3>Why do you need a documentation tool?</h3></br>
-      <img align=center src="img/fs_but_2.png">
+      <a href="#why-1">
+      <img align=center href="why-1" src="img/fs_but_2.png"></a>
     </div>
   </section>
 
   <section id="why-1">
-      <div class="container my-container">
+      <div class="container my-container padding">
         <div class="row my-row">
           <div class="col-sm-12 my-col col-md-6 my-col col-lg-6 my-col" >
             <div class="row my-row">
@@ -87,7 +89,7 @@ AGREGAR TABLAS EN BLOCK DE HOW PARA EVITAR OVERLAY
   </section>
 
   <section id="why-2">
-      <div class="container my-container">
+      <div class="container my-container padding">
         <div class="row my-row">
           <div class="col-sm-0 my-col col-lg-5 my-col">
             <img src="img/fs_ilu_2.png">
@@ -106,7 +108,7 @@ AGREGAR TABLAS EN BLOCK DE HOW PARA EVITAR OVERLAY
   </section>
 
   <section id="why-3">
-      <div class="container my-container">
+      <div class="container my-container padding">
         <div class="row my-row">
           <div class="col-sm-12 my-col col-lg-7 my-col">
             <h1 align="left">Small</br>Businesses</br>Evolve Fast</h1>
@@ -124,26 +126,28 @@ AGREGAR TABLAS EN BLOCK DE HOW PARA EVITAR OVERLAY
       </div>
       <div>
         <h3>How are we solving this?</h3></br>
-        <img align=center src="img/fs_but_3.png">
+        <a href="#how">
+        <img align=center src="img/fs_but_3.png"></a>
       </div>
   </section>
 
   <section id="how">
-    <div class="container my-container">
-        <img align="center" src="img/fs_ilu_4.png"></br>
+    <div class="container my-container padding">
+        <img align="center" class="padding" src="img/fs_ilu_4.png"></br>
         <p class="how-parragraph padding"><strong>We love flowcharts</strong> because they give us the visual,</br> and lets us understand a process at a glance.</br>
         <strong>We love docs</strong> because they give us the much</br>needed detail to follow throughwith actionable steps.</p>
     </div>
     <div class="why why-how">
       <h3 align="center" class="how-why-style"><strong>So why not combine them</br>and make a single tool?</strong></h2>
-      <img align=center src="img/fs_but_2.png">
+      <a href="#features">
+      <img align=center src="img/fs_but_2.png"></a>
     </div>
   </section>
 
 <section id="features">
-    <div class="container my-container">
+    <div class="container my-container padding">
 
-      <div class="row">
+      <div class="row padding">
         <div class="col-sm-12 col-md-8 col-lg-7">
           <img align=center src="img/fs-ph-1.png">
         </div>
@@ -153,7 +157,7 @@ AGREGAR TABLAS EN BLOCK DE HOW PARA EVITAR OVERLAY
         </div>
       </div>
 
-      <div class="row">
+      <div class="row padding">
         <div class="col-sm-12 col-md-8 col-lg-7">
           <h2 color=black class="feature-title title-green">A view for everyone</h2></br>
           <p class="feature-description">Flowscope allows managers to add team members to different work and process areas creating transparent collaborative spaces where procedures live.</p>
@@ -163,7 +167,7 @@ AGREGAR TABLAS EN BLOCK DE HOW PARA EVITAR OVERLAY
         </div>
       </div>
 
-      <div class="row">
+      <div class="row padding">
         <div class="col-sm-12 col-md-8 col-lg-7">
           <img align=center src="img/fs-ph-1.png">
         </div>
@@ -177,15 +181,17 @@ AGREGAR TABLAS EN BLOCK DE HOW PARA EVITAR OVERLAY
 </section>
 
 <section id="ready">
-  <div class="container">
-      <h1 align="center" class="padding">Ready to start flowscoping?</h1>
-      <p align="center" class="padding">We have seen flowscope document detailed operating procedures, map out marketing campaigns, systematize tha launch of new products and streamline the hire of new team members.</p>
-      <button class="button-border">Join the waiting list</button></br>
+  <div class="container my-container padding">
+      <h1 align="center" class="ready-title padding">READY TO START FLOWSCOPING?</h1>
+      <p align="center" class="how-parragraph padding">We have seen flowscope document detailed operating procedures, map out marketing campaigns, systematize tha launch of new products and streamline the hire of new team members.</p>
+      <div align="center" class="padding">
+      <button align=center class="button-border">Join the waiting list</button>
+      </div>
   </div>
 </section>
 
 <footer>
-  <div class="navbar navbar-default navbar-fixed-bottom">
+  <div class="navbar navbar-default navbar-fixed-bottom padding">
     <div class="container">
       <a href="#" class="navbar-brand">
       <img class="logo" src="img/fs-logos-2.png"></a>
