@@ -7,6 +7,22 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #585858;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 button {
   background-color: #0088ee;
   border: none;
@@ -18,6 +34,11 @@ button {
   font-family: 'Open Sans';
   font-weight: 400;
   border-radius: 30px;
+}
+
+button:hover {
+  transition-duration: 0.4s;
+  background-color: #16bb9b;
 }
 
 .button-border {
@@ -50,7 +71,7 @@ p {
   font-family: 'Open Sans';
   font-weight: 400;
   line-height: 1.5;
-  padding: 20px 0;
+  /*padding: 20px 0;*/
 }
 
 #hero {
@@ -67,8 +88,6 @@ p {
 
 #why-1 {
   width: 100%;
-  /*padding: 80px;
-  display=inline-block;*/
   color: #0088ee;
   text-align: center;
 }
@@ -90,8 +109,8 @@ p {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/fs_back_1.png);
   position: relative;
   width: 100%;
-  height: 120%;
-    /*padding-top: 80px;*/
+  height: 115%;
+  /*padding-top: 80px;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -112,9 +131,18 @@ p {
   color: #fff;
 }
 
+#footer {
+  /*padding: 80px;*/
+  background-color: #fff;
+  color: #707070;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Open Sans';
+}
+
 .my-container {
   border: 3px solid red;
-
 }
 
 .my-row {
@@ -125,13 +153,26 @@ p {
   border: 3px dotted green;
 }
 
-/*.row {
-  padding: 20px 0px;
-}*/
-
-.padding {
+.padding-light {
   padding: 40px 40px;
 }
+
+.padding {
+  padding: 80px 40px;
+}
+
+.container-fluid {
+  max-width: 1300px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.container-custom {
+  max-width: 800px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 
 .title-blue {
   background-color: #0088ee;
@@ -200,9 +241,6 @@ p {
 }
 
 .how-parragraph {
-/*  top: 450px;
-  width: 600px;
-  height: 50px;*/
   color: white;
   font-size: 30px;
   font-family: 'Open Sans';
@@ -237,80 +275,19 @@ p {
 }
 
 .ready-title {
-  font-size: 90px;
+  font-size: 85px;
   font-weight: lighter;
   font-family: 'Open Sans';
   color: white;
 }
 
+.footer-text {
+  color: #909090;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Open Sans';
+}
+
 
 /*
-
-
-.how-why {
-  top: 85%;
-  left: 50%;
-  width: 800px;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  align-items: center;
-}
-
-.padding {
-  padding: 80px 0;
-  align-items: center;
-}
-
-.docs-title {
-  font-size: 45px;
-  font-family: 'Open Sans';
-  font-weight: 600;
-  padding: 10px 25px;
-  vertical-align: middle;
-  position: relative;
-  top: 60px;
-  bottom: 40px;
-  margin-left: 30px;
-}
-
-<--
-.why-why {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  width: 800px;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  align-items: center;
-}-->
-
-
-.hero-tagline {
-  font-size: 25px;
-  font-family: 'Open Sans';
-  font-weight: 300;
-}
-
-.how-bottom {
-  text-align: bottom;
-  margin-top: 480px;
-  font-size: 20px;
-  font-family: 'Open Sans';
-  font-weight: 800;
-  color: white;
-
-}
-
-.logo {
-  padding-top: 35px;
-  position: fixed;
-  left: 20%;
-}
-
-.menu {
-  color: white;
-  padding-left: 20px;
-  font-family: 'Open Sans', sans-serif;
-}
