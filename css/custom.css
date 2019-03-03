@@ -141,18 +141,6 @@ p {
   font-family: 'Open Sans';
 }
 
-.my-container {
-  border: 3px solid red;
-}
-
-.my-row {
-  border: 3px dotted blue;
-}
-
-.my-col {
-  border: 3px dotted green;
-}
-
 .padding-light {
   padding: 40px 40px;
 }
@@ -291,3 +279,15 @@ p {
 
 
 /*
+
+.my-container {
+  border: 3px solid red;
+}
+
+.my-row {
+  border: 3px dotted blue;
+}
+
+.my-col {
+  border: 3px dotted green;
+}
