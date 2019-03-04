@@ -4,7 +4,7 @@
 <head>
   <meta charset "UTF-8">
   <title>Flowscope</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link rel="shortcut icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
@@ -29,11 +29,11 @@ Test and go live
 -->
 
   <section id="hero">
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark">
       <div class="container">
         <a href="#" class="navbar-brand">
           <img align="left" class="logo" src="img/fs_logos_1.png"></a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu_navbar">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu_navbar" aria-controls="menu_navbar" aria-expanded="false" aria-label="toggle-navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="menu_navbar">
@@ -68,20 +68,20 @@ Test and go live
   <section id="why-1">
     <div class="container my-container padding">
       <div class="row my-row">
-        <div class="col-sm-12 my-col col-lg-7 my-col">
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 my-col">
           <div class="row my-row padding">
             <span class="docs-title title-blue">DOCUMENTS</span></br>
-            <span class="docs-title title-white">EVERYWHERE</span>
+            <span class="docs-title title-white"> EVERYWHERE</span>
           </div>
         </div>
-        <div class="col-sm-0 my-col col-lg-5 my-col">
-          <img align="left" src="img/fs_ilu_1.png" class="responsive">
+        <div class="col-xs-0 col-sm-0 col-md-5 col-lg-5 my-coll">
+          <img align="left" class="img-fluid" src="img/fs_ilu_1.png">
         </div>
       </div>
-      <div class="row my-row padding-light">
-        <div class="col-sm-12 my-col">
-          <p><strong>Processes are often spread across different tools and assets.</strong></br>
-            Shared docs lost in limbo, old app accounts, physical notes in the</br>bin or even incomplete flowcharts can be a headache.</p>
+      <div class="row padding-light my-row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 my-col">
+          <p><strong>Processes are often spread across different tools and assets.</strong>
+            Shared docs lost in limbo, old app accounts, physical notes in the bin or even incomplete flowcharts can be a headache.</p>
         </div>
       </div>
     </div>
@@ -90,17 +90,17 @@ Test and go live
   <section id="why-2">
     <div class="container my-container padding">
       <div class="row my-row">
-        <div class="col-sm-0 my-col col-lg-5 my-col">
-          <img src="img/fs_ilu_2.png" class="responsive">
+        <div class="col-xs-0 col-sm-0 col-md-5 col-lg-5 my-col">
+          <img class="img-fluid" src="img/fs_ilu_2.png">
         </div>
-        <div class="col-sm-12 my-col col-lg-7 my-col">
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 my-col">
           <h1 class="why-taglines padding">Processes</br>Matter</h1>
         </div>
       </div>
-      <div class="row my-row padding-light">
-        <div class="col-sm-12 my-col">
-          <p><strong>It can be challenging to make sure that your team is on the same page.</strong></br>
-            Helping your team perform essential business operations</br>translates into improved productivity and business efficiency.</p>
+      <div class="row padding-light my-row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 my-col">
+          <p><strong>It can be challenging to make sure that your team is on the same page.</strong>
+            Helping your team perform essential business operations translates into improved productivity and business efficiency.</p>
         </div>
       </div>
     </div>
@@ -113,13 +113,13 @@ Test and go live
           <h1 align="left">Small</br>Businesses</br>Evolve Fast</h1>
         </div>
         <div class="col-sm-0 my-col col-lg-5 my-col">
-          <img src="img/fs_ilu_3.png" class="responsive">
+          <img class="img-fluid" src="img/fs_ilu_3.png">
         </div>
       </div>
-      <div class="row my-row padding-light">
-        <div class="col-sm-12 my-col">
-          <p><strong>There are ton of new wiki, help-center, flowcharting and productivity tools.</strong></br>
-            While they serve a purpose they are a far from ideal solution</br>to keep organizational documents updated.</p>
+      <div class="row padding-light my-row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 my-col">
+          <p><strong>There are ton of new wiki, help-center, flowcharting and productivity tools.</strong>
+            While they serve a purpose they are a far from ideal solution to keep organizational documents updated.</p>
         </div>
       </div>
     </div>
@@ -133,51 +133,55 @@ Test and go live
   <section id="how">
     <div class="container my-container padding">
       <div class="row my-row">
-        <div class="col-sm-12 my-col">
-          <img class="my-container responsive" src="img/fs_ilu_4.png">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 my-col">
+          <img class="my-container img-fluid" src="img/fs_ilu_4.png">
         </div>
       </div>
       <div class="row my-row padding">
-        <div class="col-sm-12 my-col">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 my-col">
           <p class="how-parragraph"><strong>We love flowcharts</strong> because they give us the visual,</br> and lets us understand a process at a glance.</br>
-          <strong>We love docs</strong> because they give us the much</br>needed detail to follow throughwith actionable steps.</p></br>
+          <strong>We love docs</strong> because they give us the much needed detail to follow throughwith actionable steps.</p>
         </div>
       </div>
-    <div class="question">
-      <h3 class="how-why-style"><strong>So why not combine them</br>and make a single tool?</strong></h2>
-      <a href="#features">
-      <img align=center src="img/fs_but_2.png"></a>
-    </div>
+      <div class="row my-row padding">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 my-col">
+          <div class="question">
+            <h3 class="how-why-style"><strong>So why not combine them and make a single tool?</strong></h2></br>
+            <a href="#features">
+            <img align=center src="img/fs_but_2.png"></a>
+          </div>
+        </div>
+      </div>
   </section>
 
   <section id="features">
     <div class="container-fluid my-container padding">
 
       <div class="row my-row padding-light">
-        <div class="col-sm-12 col-lg-6 my-col">
-          <img align=center src="img/fs-ph-1.png" class="responsive">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 my-col">
+          <img align=center class="img-fluid" src="img/fs-ph-1.png">
         </div>
-        <div class="col-sm-0 col-lg-6 my-col">
+        <div class="col-xs-0 col-sm-0 col-md-6 col-lg-6 my-col">
           <h2 class="feature-title title-light-blue">Create flows and processes easilly</h2></br>
           <p class="feature-description">Dinamically build flows and add templates,attachments, media, checklists or any other action items associated with your business processes.</p>
         </div>
       </div>
 
       <div class="row my-row padding-light">
-        <div class="col-sm-12 col-lg-6 my-col">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 my-col">
           <h2 color=black class="feature-title title-green">A view for everyone</h2></br>
           <p class="feature-description">Allow managers to add team members to different work and process areas creating transparent collaborative spaces where procedures live.</p>
         </div>
-        <div class="col-sm-0 col-lg-6 my-col">
-          <img align=center src="img/fs-ph-1.png" class="responsive">
+        <div class="col-xs-0 col-sm-0 col-md-6 col-lg-6 my-col">
+          <img align=center class="img-fluid" src="img/fs-ph-1.png">
         </div>
       </div>
 
       <div class="row my-row padding-light">
-        <div class="col-sm-12 col-lg-6 my-col">
-          <img align=center src="img/fs-ph-1.png" class="responsive">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 my-col">
+          <img align=center class="img-fluid" src="img/fs-ph-1.png">
         </div>
-        <div class="col-sm-0 col-lg-6 my-col">
+        <div class="col-xs-0 col-sm-0 col-md-6 col-lg-6 my-col">
           <h2 class="feature-title title-dark-blue">Grow and scale!</h2></br>
           <p class="feature-description">Just update the company's processes as you grow and scale in the simplest way. Changes will be with the team in seconds.</p>
         </div>
@@ -202,7 +206,7 @@ Test and go live
           <img class="logo" src="img/fs-logos-2.png"></a>
         <a class="footer-text" href="#">Terms of Service</a>
         <a class="footer-text" href="#">Privacy Policy</a>
-        <span class="footer-text">Copyright © 2019. All rights reserved.</span>
+        <span class="footer-text">Copyright 2019. All rights reserved.</span>
       </div>
   </footer>
 

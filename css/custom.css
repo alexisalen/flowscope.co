@@ -1,10 +1,6 @@
 body, html {
   height: 100%;
-  font-size: 100%;
-}
-
-@media screen and (min-width: 25em){
-  html { font-size: calc( 10px + (20 - 18) * (100vw - 400px) / (800 - 400) ); }
+  font-size: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
 }
 
 a {
@@ -41,7 +37,6 @@ button {
 }
 
 button:hover {
-  transition-duration: 0.4s;
   background-color: #16bb9b;
 }
 
@@ -64,20 +59,20 @@ h2 {
 
 h3 {
   position:static;
-  font-size: 1.52em;
+  font-size: 1.50em;
   font-family: 'Open Sans';
   font-weight: 400;
 }
 
 p {
-  font-size: 1.66em;
+  font-size: 1.65em;
   font-family: 'Open Sans';
   font-weight: 400;
   line-height: 1.5;
 }
 
 .navbar-dark {
-  font-size: 1.52em;
+  font-size: 1.50em;
   font-family: 'Open Sans';
   font-weight: bold;
 }
@@ -145,23 +140,16 @@ p {
   font-weight: 400;
 }
 
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
-
 .padding-light {
-  padding: 40px 40px;
+  padding: 3% 3%;
 }
 
 .padding {
-  padding: 80px 40px;
+  padding: 6% 6%;
 }
 
 .container-fluid {
-  max-width: 85%;
-  padding-left: 0%;
-  padding-right: 0%;
+  max-width: 90%;
 }
 
 .title-blue {
@@ -172,7 +160,7 @@ p {
 .title-white {
   background-color: white;
   color: #0088ee;
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 .title-dark-blue {
@@ -210,7 +198,7 @@ p {
   font-size: 3.125em;
   font-family: 'Open Sans';
   font-weight: 600;
-  padding: 10px 25px;
+  padding: 2% 4%;
   vertical-align: middle;
   position: relative;
 }
@@ -222,7 +210,7 @@ p {
 
 .how-parragraph {
   color: white;
-  font-size: 2.08em;
+  font-size: 2em;
   font-family: 'Open Sans';
   font-weight: 300;
   line-height: 1.5;
@@ -234,44 +222,41 @@ p {
   font-size: 2.63em;
   font-family: 'Open Sans';
   font-weight: 800;
-  padding-bottom: 40px;
 }
 
 .feature-title {
-  font-weight: 600;
   font-size: 2.77em;
   font-family: 'Open Sans';
-  padding-top: 40px;
+  font-weight: 600;
+  padding-top: 6%;
   width: 90%;
 }
 
 .feature-description {
-  font-size: 1.52em;
-  font-weight: 400;
+  font-size: 1.50em;
   font-family: 'Open Sans';
+  font-weight: 400;
   color: black;
   text-align: left;
   width: 90%;
 }
 
 .ready-title {
-  font-size: 5.90em;
-  font-weight: lighter;
+  font-size: 5em;
   font-family: 'Open Sans';
+  font-weight: lighter;
   color: white;
 }
 
 .footer-text {
+  font-size: 1.25em;
+  font-family: 'Open Sans';
+  font-weight: 400;
   color: #909090;
   text-decoration: none;
-  font-size: 1.25em;
-  font-weight: 400;
-  font-family: 'Open Sans';
 }
 
-.my-container {
-  border: 3px solid red;
-}
+
 
 /*
 
@@ -287,6 +272,11 @@ p {
   border: 3px dotted green;
 }
 
+
+@media screen and (min-width: 200px) and (max-width: 768px){
+  html { font-size: calc( 10px + (20 - 18) * (100vw - 400px) / (800 - 400) ); }
+}
+
 .container-custom {
   max-width: 100%;
   padding-left: 0%;
@@ -294,30 +284,12 @@ p {
   margin: 0%;
 }
 
-font-size: calc(20px + (72 - 20) * ((100vw - 300px) / (1920 - 300)));
-
 .img-sizing {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 
-}
-
-.my-container {
-  border: 3px solid red;
-}
-
-.my-row {
-  border: 3px dotted blue;
-}
-
-.my-col {
-  border: 3px dotted green;
-}
-
-.hero-play {
-  padding: 40px;
 }
 
 /*.question-how {
