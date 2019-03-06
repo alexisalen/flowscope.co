@@ -22,21 +22,25 @@
 <body>
 
   <!--Pasos
-Fix stylings
+Replace PNGs for SVGs
+Adjust responsive text
+Fix How background
+Hero background responsive
+Fix navbar
 Add terms and cond
 Test and go live
-
 -->
 
   <section id="hero">
-    <nav class="navbar navbar-expand-sm navbar-dark">
-      <div class="container">
+    <div class="container">
+      <nav class="navbar navbar-expand-sm navbar-dark">
+
         <a href="#" class="navbar-brand">
-          <img align="left" class="logo" src="img/fs_logos_1.png"></a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu_navbar" aria-controls="menu_navbar" aria-expanded="false" aria-label="toggle-navigation">
+          <img align="left" class="logo img-fluid" src="img/fs_logos_1.png"></a>
+        <span class="navbar-toggler" data-toggle="collapse" data-target="#menu_navbar" aria-controls="menu_navbar" aria-expanded="false" aria-label="toggle-navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu_navbar">
+        </span>
+        <div class="collapse navbar-collapse hidden-xs" id="menu_navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="#why-1">Why?</a>
@@ -49,19 +53,19 @@ Test and go live
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <div class="container my-container hero-text">
       <h1 class="hero-title">Visualize Your Business</h1>
       <h2>Create your company flows and procedures effectively</h2>
-      <img class="padding-light" align="center" src="img/fs_but_1.png"></br>
+      <img align="center"class="img-fluid padding"  src="img/fs_but_1.png"></br>
       <a href="#"><button>Join the waiting list</button></a></br>
     </div>
     <div class="question my-container">
       <h3>Why do you need a documentation tool?</h3></br>
       <a href="#why-1">
-        <img align=center href="why-1" src="img/fs_but_2.png"></a>
+        <img align="center" href="why-1" src="img/fs_but_2.png"></a>
     </div>
   </section>
 
@@ -71,11 +75,11 @@ Test and go live
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 my-col">
           <div class="row my-row padding">
             <span class="docs-title title-blue">DOCUMENTS</span></br>
-            <span class="docs-title title-white"> EVERYWHERE</span>
+            <span class="docs-title title-white">EVERYWHERE</span>
           </div>
         </div>
         <div class="col-xs-0 col-sm-0 col-md-5 col-lg-5 my-coll">
-          <img align="left" class="img-fluid" src="img/fs_ilu_1.png">
+          <img align="center" class="img-fluid" src="img/fs_ilu_1.png">
         </div>
       </div>
       <div class="row padding-light my-row">
@@ -91,10 +95,10 @@ Test and go live
     <div class="container my-container padding">
       <div class="row my-row">
         <div class="col-xs-0 col-sm-0 col-md-5 col-lg-5 my-col">
-          <img class="img-fluid" src="img/fs_ilu_2.png">
+          <img align="center" class="img-fluid" src="img/fs_ilu_2.png">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 my-col">
-          <h1 class="why-taglines padding">Processes</br>Matter</h1>
+          <h1 align="left" class="padding">Processes</br>Matter</h1>
         </div>
       </div>
       <div class="row padding-light my-row">
@@ -109,11 +113,11 @@ Test and go live
   <section id="why-3">
     <div class="container my-container padding">
       <div class="row my-row">
-        <div class="col-sm-12 my-col col-lg-7 my-col">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 my-col">
           <h1 align="left">Small</br>Businesses</br>Evolve Fast</h1>
         </div>
-        <div class="col-sm-0 my-col col-lg-5 my-col">
-          <img class="img-fluid" src="img/fs_ilu_3.png">
+        <div class="col-xs-0 col-sm-0 col-md-6 col-lg-6 my-col">
+          <img align="center" class="img-fluid padding-light" src="img/fs_ilu_3.png">
         </div>
       </div>
       <div class="row padding-light my-row">
@@ -162,15 +166,15 @@ Test and go live
           <img align=center class="img-fluid" src="img/fs-ph-1.png">
         </div>
         <div class="col-xs-0 col-sm-0 col-md-6 col-lg-6 my-col">
-          <h2 class="feature-title title-light-blue">Create flows and processes easilly</h2></br>
-          <p class="feature-description">Dinamically build flows and add templates,attachments, media, checklists or any other action items associated with your business processes.</p>
+          <h2 class="feature-title title-light-blue">Clear flows and processes</h2></br>
+          <p class="feature-description">Build flows and add templates, attachments, media, checklists or any other action items associated with your business processes.</p>
         </div>
       </div>
 
       <div class="row my-row padding-light">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 my-col">
           <h2 color=black class="feature-title title-green">A view for everyone</h2></br>
-          <p class="feature-description">Allow managers to add team members to different work and process areas creating transparent collaborative spaces where procedures live.</p>
+          <p class="feature-description">Create teams and process areas defining transparent collaborative spaces where procedures live.</p>
         </div>
         <div class="col-xs-0 col-sm-0 col-md-6 col-lg-6 my-col">
           <img align=center class="img-fluid" src="img/fs-ph-1.png">
@@ -203,7 +207,7 @@ Test and go live
     <div class="navbar navbar-default navbar-fixed-bottom padding-light">
       <div class="container">
         <a href="#" class="navbar-brand">
-          <img class="logo" src="img/fs-logos-2.png"></a>
+          <img class="logo img-fluid" src="img/fs-logos-2.png"></a>
         <a class="footer-text" href="#">Terms of Service</a>
         <a class="footer-text" href="#">Privacy Policy</a>
         <span class="footer-text">Copyright 2019. All rights reserved.</span>
