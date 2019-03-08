@@ -11,9 +11,16 @@ body, html {
     max-width: 60%;
   }
 
-  .padding {
-    padding: 0% 0%;
+  .title-why {
+    align-items: center;
+    text-align: center;
   }
+
+  .container-fluid {
+    align-items: center;
+    text-align: center;
+  }
+
 }
 
 /*@media screen and (min-width: 768px) and (max-width: 991px) {
@@ -65,7 +72,7 @@ button:hover {
 }
 
 h1 {
-  font-size: 4.5em;
+  font-size: 5em;
   font-family: 'Open Sans';
   font-weight: 800;
 
@@ -166,27 +173,16 @@ p {
   font-weight: 400;
 }
 
+.padding {
+  padding: 6% 6%;
+}
+
 .padding-light {
   padding: 3.5% 3.5%;
 }
 
-.padding {
-  padding: 7% 7%;
-}
-
 .container-fluid {
   max-width: 90%;
-}
-
-.title-blue {
-  background-color: #0088ee;
-  color: white;
-}
-
-.title-white {
-  background-color: white;
-  color: #0088ee;
-  margin-left: 15%;
 }
 
 .title-dark-blue {
@@ -199,6 +195,40 @@ p {
 
 .title-green {
   color: #16bb9b;
+}
+
+.title-docs {
+  font-size: 3.8em;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  position: relative;
+}
+
+.title-blue {
+  background-color: #0088ee;
+  color: white;
+  padding: 2% 6%;
+}
+
+.title-white {
+  background-color: white;
+  color: #0088ee;
+  margin-left: 20%;
+}
+
+.title-why {
+  font-size: 4.8em;
+}
+
+.title-top {
+  padding-top: 10%;
+}
+
+.title-ready {
+  font-size: 5em;
+  font-family: 'Open Sans';
+  font-weight: lighter;
+  color: white;
 }
 
 .hero-text {
@@ -215,15 +245,7 @@ p {
   transform: translate(-50%, -50%);
   width: 100%;
 }
-
-.docs-title {
-  font-size: 3.125em;
-  font-family: 'Open Sans';
-  font-weight: 600;
-  padding: 2% 4%;
-  position: relative;
-}
-
+/*Move forward with question*/
 
 
 .how-parragraph {
@@ -239,15 +261,15 @@ p {
   font-size: 2.63em;
   font-family: 'Open Sans';
   font-weight: 800;
-  width: 100%;
 }
 
 .feature-title {
   font-size: 2.77em;
   font-family: 'Open Sans';
   font-weight: 600;
-  padding-top: 6%;
+  padding-top: 10%;
   width: 90%;
+  text-align: left;
 }
 
 .feature-description {
@@ -257,13 +279,6 @@ p {
   color: black;
   width: 90%;
   text-align: left;
-}
-
-.ready-title {
-  font-size: 5em;
-  font-family: 'Open Sans';
-  font-weight: lighter;
-  color: white;
 }
 
 .footer-text {
