@@ -3,12 +3,11 @@ body, html {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-size: calc(6px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
 }
 
 @media screen and (max-width: 767px) {
   .img-fluid {
-    max-width: 60%;
+    max-width: 80%;
   }
 
   .title-why {
@@ -21,9 +20,26 @@ body, html {
     text-align: center;
   }
 
+  body, html {
+    font-size: calc(10px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
+  }
+
 }
 
-/*@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
+  body, html {
+    font-size: calc(6px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+
+/*
+@media screen and (min-width: 768px) {
+  .img-fluid {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 @media screen and (min-width: 992px) {
@@ -81,7 +97,7 @@ h1 {
 h2 {
   font-size: 2em;
   font-family: 'Open Sans';
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 h3 {
@@ -102,6 +118,16 @@ p {
   font-size: 1.50em;
   font-family: 'Open Sans';
   font-weight: bold;
+  text-align: right;
+}
+
+.container-hero
+{ position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  text-align: center;
+  transform: translate(-50%,-50%);
 }
 
 #hero {
@@ -114,6 +140,7 @@ p {
   height: 100%;
   color: #fff;
   text-align: center;
+  overflow: hidden;
 }
 
 #why-1 {
@@ -207,7 +234,7 @@ p {
 .title-blue {
   background-color: #0088ee;
   color: white;
-  padding: 2% 6%;
+  padding: 8px;
 }
 
 .title-white {
@@ -221,7 +248,7 @@ p {
 }
 
 .title-top {
-  padding-top: 10%;
+  padding-top: 0%;
 }
 
 .title-ready {
@@ -243,10 +270,8 @@ p {
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 90%;
 }
-/*Move forward with question*/
-
 
 .how-parragraph {
   color: white;
@@ -289,8 +314,9 @@ p {
   text-decoration: none;
 }
 
-/*
 
+
+/*
 .my-container {
   border: 3px solid red;
 }
