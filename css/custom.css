@@ -34,8 +34,6 @@ body, html {
   }
 }
 
-
-
 /*
 
 @media (min-width: 1200px) {
@@ -115,7 +113,7 @@ h2 {
 h3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.75em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 p {
@@ -246,14 +244,9 @@ i:hover {
 }
 
 .container-hero {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  overflow: hidden;
-  text-align: center;
-  transform: translate(-50%,-50%);
-  filter: brightness(100%);
+  padding: 12% 6% 8% 6%;
 }
+
 
 .container-fluid {
   max-width: 90%;
@@ -304,14 +297,6 @@ i:hover {
   color: white;
 }
 
-.question {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-}
-
 .how-parragraph {
   color: white;
   font-size: 2em;
@@ -346,16 +331,68 @@ i:hover {
   text-decoration: none;
 }
 
-.my-container {
-  border: 3px solid red;
+.footer-button {
+  font-size: 1em;
+  display: inline-block;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -o-animation-name: footer-button;
+  -ms-animation-name: footer-button;
+  -moz-animation-name: footer-button;
+  -webkit-animation-name: footer-button;
+  animation-name: footer-button;
+  -o-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
-.my-row {
-  border: 3px dotted blue;
+@-webkit-keyframes footer-button {
+  from {
+    -o-transform: translate3d( 0, 0px, 0  );
+    -ms-transform: translate3d( 0, 0px, 0  );
+    -moz-transform: translate3d( 0, 0px, 0  );
+    -webkit-transform: translate3d( 0, 0px, 0  );
+    transform: translate3d( 0, 0px, 0  );
+    filter: alpha(opacity=0 ) ;
+    opacity: 0 ;
+  }
+  10% {
+    -o-transform: translate3d( 0, 5px, 0  );
+    -ms-transform: translate3d( 0, 5px, 0  );
+    -moz-transform: translate3d( 0, 5px, 0  );
+    -webkit-transform: translate3d( 0, 5px, 0  );
+    transform: translate3d( 0, 5px, 0  );
+    filter: alpha(opacity=100 ) ;
+    opacity: 1 ;
+  }
+  to {
+    -o-transform: translate3d( 0, 30px, 0  );
+    -ms-transform: translate3d( 0, 30px, 0  );
+    -moz-transform: translate3d( 0, 30px, 0  );
+    -webkit-transform: translate3d( 0, 30px, 0  );
+    transform: translate3d( 0, 30px, 0  );
+    filter: alpha(opacity=0 ) ;
+    opacity: 0 ;
+  }
 }
 
-.my-col {
-  border: 3px dotted green;
+.icon-arrow-carrot-down {
+  font-size: 5em;
 }
 
 .fa-play-circle {
@@ -380,6 +417,31 @@ i:hover {
   border: 3px dotted green;
 }
 
+.container-custom {
+  max-width: 100%;
+  padding-left: 0%;
+  padding-right: 0%;
+  margin: 0%;
+}
+
+.container-hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  filter: brightness(100%);
+}
+
+.question {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
 .how-why-style {
   color: white;
   font-size: 2.63em;
@@ -387,12 +449,7 @@ i:hover {
   font-weight: 800;
 }
 
-.container-custom {
-  max-width: 100%;
-  padding-left: 0%;
-  padding-right: 0%;
-  margin: 0%;
-}
+
 
 .img-sizing {
   display: block;
