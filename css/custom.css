@@ -142,8 +142,6 @@ i:hover {
   box-shadow: 0px 0px 80px #fff;
 }
 
-**/
-
 #hero {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -158,6 +156,16 @@ i:hover {
   color: #fff;
   text-align: center;
   overflow: hidden;
+}
+**/
+
+#hero {
+  background: hsla(0, 0%, 13%, 1);
+  background-image: radial-gradient(hsla(0, 0%, 21%, 0.91) 5%, transparent 0);
+  background-size: 30px 30px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
 }
 
 #why-1 {
@@ -222,6 +230,10 @@ i:hover {
   padding: 3.5% 3.5%;
 }
 
+.padding-question {
+  padding-top: 6%;
+}
+
 .navbar-custom {
   padding: 1.2em;
   font-size: 1.0em;
@@ -243,10 +255,10 @@ i:hover {
   text-shadow: 1px 1px 2px #202020;
 }
 
-.container-hero {
-  padding: 12% 6% 8% 6%;
-}
 
+.container-hero {
+  padding: 15% 6% 0% 6%;
+}
 
 .container-fluid {
   max-width: 90%;
@@ -332,6 +344,7 @@ i:hover {
 }
 
 .footer-button {
+  padding: -5%;
   font-size: 1em;
   display: inline-block;
   -o-transform-style: preserve-3d;
@@ -397,6 +410,7 @@ i:hover {
 
 .fa-play-circle {
   font-size: 4em;
+
 }
 
 .fa-bars {
