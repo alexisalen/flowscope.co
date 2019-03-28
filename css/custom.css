@@ -131,8 +131,6 @@ i:hover {
 
 #hero {
   background-image: linear-gradient(to bottom, #174c76, #262a2e);
-  /** background: hsla(0, 0%, 13%, 1);
-  background-image: radial-gradient(hsla(0, 0%, 21%, 0.91) 5%, transparent 0);**/
   width: 100%;
   color: #fff;
   text-align: center;
@@ -220,6 +218,11 @@ i:hover {
 
 .container-hero {
   padding: 12% 6% 0% 6%;
+}
+
+.grid {
+  background-image: radial-gradient(hsla(0, 0%, 15%, 0.91) 4%, transparent 0);
+  background-size: 3.75em 3.75em;
 }
 
 .container-fluid {
@@ -380,18 +383,6 @@ i:hover {
   font-size: 1.8em;
 }
 
-
-.my-container {
-  border: 3px solid red;
-}
-
-.my-row {
-  border: 3px dotted blue;
-}
-
-.my-col {
-  border: 3px dotted green;
-}
 
 
 
