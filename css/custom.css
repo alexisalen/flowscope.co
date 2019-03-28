@@ -57,9 +57,12 @@ a:active {
 
 button {
   background-color: #0088ee;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
   border: none;
   color: white;
-  padding: 0.7em 3.6em;
+  padding: 0.7em 5em;
   text-align: center;
   text-decoration: none;
   font-size: 1.30em;
@@ -82,8 +85,8 @@ button:hover {
 
 h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 5em;
-  font-weight: 600;
+  font-size: 5.5em;
+  font-weight: 300;
 }
 
 h2 {
@@ -127,9 +130,9 @@ i:hover {
 **/
 
 #hero {
-  background: hsla(0, 0%, 13%, 1);
-  background-image: radial-gradient(hsla(0, 0%, 21%, 0.91) 5%, transparent 0);
-  background-size: 30px 30px;
+  background-image: linear-gradient(to bottom, #174c76, #262a2e);
+  /** background: hsla(0, 0%, 13%, 1);
+  background-image: radial-gradient(hsla(0, 0%, 21%, 0.91) 5%, transparent 0);**/
   width: 100%;
   color: #fff;
   text-align: center;
@@ -198,7 +201,7 @@ i:hover {
   padding: 1.2em;
   font-size: 1.1em;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   color: white;
   text-align: right;
 }
