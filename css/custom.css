@@ -8,10 +8,10 @@ body, html {
 }
 
 @media screen and (max-width: 767px) {
-  .img-fluid {
+/**  .img-fluid {
     max-width: 80%;
   }
-
+**/
   .title-why {
     align-items: center;
     text-align: center;
@@ -33,7 +33,6 @@ body, html {
     font-size: calc(6px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
   }
 }
-
 
 a {
   text-decoration: none;
@@ -68,23 +67,30 @@ button {
   font-size: 1.30em;
   transition: all 1s ease 0s;
 	text-shadow:0px 2px 4px black;
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.5);
   font-weight: 400;
   border-radius: 30px;
 }
 
 button:hover {
-  color: black;
-  background-color: #d6edff;
-	text-shadow:0px 2px 4px #a6a6a6;
+background: #10a8ff;
+}
+
+button:active {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+  transform: translateY(1px);
 }
 
 .button-border {
   border: 0.12em solid #fff;
-  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.5);
 }
 
 .shadow-effect {
   text-shadow: 0.5px 0.5px 60px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-effect-img {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
@@ -128,13 +134,16 @@ p {
 i {
   background-color: transparent;
   color: white;
-  background-repeat: no-repeat;
 }
 
 li{
   padding-left: 2.5em;
 }
 
+img {
+  max-width:100%;
+  height:auto;
+}
 /** Unificar hover para todos los icons
 i:hover {
   color: #E8E8E8;
@@ -148,7 +157,6 @@ i:hover {
 #hero {
   background-image: linear-gradient(to bottom, #174c76, #262a2e);
   width: 100%;
-  height: 100%;
   color: #fff;
   text-align: center;
 }
@@ -166,6 +174,7 @@ i:hover {
 }
 
 #how {
+
   background-color: #0088ee;
   color: #fff;
   text-align: center;
@@ -188,6 +197,20 @@ i:hover {
   padding: 1%;
 }
 
+.container-hero {
+  padding: 12% 4% 0% 4%;
+
+}
+
+.container-fluid {
+  max-width: 90%;
+}
+
+.grid {
+  background-image: radial-gradient(hsla(0, 0%, 15%, 0.91) 4%, transparent 0);
+  background-size: 3.75em 3.75em;
+}
+
 .vertical-align {
     display: flex;
     align-items: center;
@@ -203,7 +226,12 @@ i:hover {
 
 .margin-question {
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
+}
+
+.arrow {
+  margin-top: 14%;
+  margin-bottom: 6%;
 }
 
 .navbar-custom {
@@ -227,29 +255,6 @@ i:hover {
   text-shadow: 1px 1px 2px #202020;
 }
 
-.container-hero {
-  padding: 12% 4% 0% 4%;
-}
-
-.container-fluid {
-  max-width: 90%;
-}
-
-.container-answer {
-  max-width: 100%;
-  margin-left: 6%;
-  margin-right: 6%;
-}
-
-.grid {
-  background-image: radial-gradient(hsla(0, 0%, 15%, 0.91) 4%, transparent 0);
-  background-size: 3.75em 3.75em;
-}
-
-.shadow {
-  text-shadow: 4px 4px 40px black;
-}
-
 .title-dark-blue {
   color: #112F80;
 }
@@ -262,34 +267,8 @@ i:hover {
   color: #16bb9b;
 }
 
-.title-docs {
-  font-size: 3.5em;
-  padding: 10px 30px;
-}
-
-.title-blue {
-  background-color: #0088ee;
-  color: white;
-  padding: 10px 30px;
-}
-
-.title-white {
-  background-color: white;
-  color: #0088ee;
-  margin-left: 20%;
-  box-shadow: 10px 20px 80px rgba(0, 0, 0, 0.5);
-}
-
-.how-parragraph {
-  color: white;
-  font-size: 2em;
-  font-family: 'Open Sans';
-  font-weight: 300;
-  line-height: 1.5;
-}
-
 .feature-title {
-  padding-top: 10%;
+  margin-top: 12%;
   width: 90%;
   text-align: left;
 }
@@ -317,8 +296,13 @@ i:hover {
   font-size: 1.8em;
 }
 
+.border > img
+{ padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  display: inline-block;
+  width: 100%;
 
-
+}
 
 /*
 .my-container {
@@ -497,6 +481,13 @@ i:hover {
 
 .question-how {
   top: 90%;
+}
+
+.title-white {
+  background-color: white;
+  color: #0088ee;
+  margin-left: 20%;
+  box-shadow: 10px 20px 80px rgba(0, 0, 0, 0.5);
 }
 
 */
