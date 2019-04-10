@@ -7,33 +7,6 @@ body, html {
   font-family: 'Open Sans', sans-serif;
 }
 
-@media screen and (max-width: 767px) {
-/**  .img-fluid {
-    max-width: 80%;
-  }
-**/
-  .title-why {
-    align-items: center;
-    text-align: center;
-  }
-
-  .container-fluid {
-    align-items: center;
-    text-align: center;
-  }
-
-  body, html {
-    font-size: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-  }
-
-}
-
-@media screen and (min-width: 768px) {
-  body, html {
-    font-size: calc(6px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-  }
-}
-
 a {
   text-decoration: none;
 }
@@ -57,8 +30,7 @@ a:active {
 button {
   background-color: #0088ee;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.1em;
-  font-weight: 600;
+  font-weight: 400;
   border: none;
   color: white;
   padding: 0.7em 5em;
@@ -68,7 +40,6 @@ button {
   transition: all 1s ease 0s;
 	text-shadow:0px 2px 4px black;
   box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.5);
-  font-weight: 400;
   border-radius: 30px;
 }
 
@@ -156,7 +127,6 @@ i:hover {
 
 #hero {
   background-image: linear-gradient(to bottom, #174c76, #262a2e);
-  width: 100%;
   color: #fff;
   text-align: center;
 }
@@ -168,13 +138,11 @@ i:hover {
 }
 
 #answers {
-  width: 100%;
   color: #0088ee;
   text-align: center;
 }
 
 #how {
-
   background-color: #0088ee;
   color: #fff;
   text-align: center;
@@ -255,6 +223,11 @@ i:hover {
   text-shadow: 1px 1px 2px #202020;
 }
 
+.logo-size
+{
+  max-width: 100%;
+}
+
 .title-dark-blue {
   color: #112F80;
 }
@@ -297,11 +270,110 @@ i:hover {
 }
 
 .border > img
-{ padding: 0 0 0 0;
-  margin: 0 0 0 0;
-  display: inline-block;
+{
   width: 100%;
+  overflow:hidden;
+}
 
+
+
+@media screen and (max-width: 480px) {
+  .img-fluid {
+    max-width: 50%;
+  }
+
+  button {
+    padding: 0.5em 3em;
+    font-size: 1.0em;
+  }
+
+
+  h1 {
+    font-size: 3.4em;
+  }
+
+  h2 {
+    font-size: 2.9em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+
+  h5 {
+    font-size: 1.1em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .img-fluid {
+    max-width: 70%;
+  }
+
+  #a-first {
+    order: 2;
+  }
+
+  #a-second {
+    order: 1;
+  }
+
+  #a-third {
+    order: 2;
+  }
+
+  #a-forth {
+    order: 1;
+  }
+
+  #a-fifth {
+    order: 2;
+  }
+
+  #a-sixth {
+    order: 1;
+  }
+
+  #f-first {
+    order: 2;
+  }
+
+  #f-second {
+    order: 1;
+  }
+
+  #f-fifth {
+    order: 2;
+  }
+
+  #f-sixth {
+    order: 1;
+  }
+
+  .container-fluid {
+    align-items: center;
+    text-align: center;
+  }
+
+  body, html {
+    font-size: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  body, html {
+    font-size: calc(6px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
+  }
 }
 
 /*
@@ -317,6 +389,20 @@ i:hover {
   border: 3px dotted green;
 }
 
+/* Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...}
 
 .footer-button {
   font-size: 1em;
