@@ -1,4 +1,0 @@
-Ajustar responisveness
-Arreglar menu
-Resolver porque muchas veces no se me toman los estilos
-Usar git eficientemente
