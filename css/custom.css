@@ -166,7 +166,8 @@ i:hover {
 }
 
 .container-hero {
-  padding: 12% 4% 0% 4%;
+  /*padding: 12% 4% 0% 4%;*/
+  margin-top : 12%;
 
 }
 
@@ -268,13 +269,18 @@ i:hover {
 .fa-bars {
   font-size: 1.8em;
 }
-
+.border{
+  border:0px !important;
+  margin-top: -2px;
+}
 .border > img
 {
   width: 100%;
   overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
 }
-
 
 
 @media screen and (max-width: 480px) {
