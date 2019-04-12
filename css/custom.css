@@ -5,6 +5,7 @@ body, html {
   padding: 0;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -38,8 +39,8 @@ button {
   text-decoration: none;
   font-size: 1.30em;
   transition: all 1s ease 0s;
-	text-shadow:0px 1px 2px black;
-  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.5);
+	text-shadow:0 1px 2px black;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
   border-radius: 30px;
 }
 
@@ -48,24 +49,8 @@ background: #10a8ff;
 }
 
 button:active {
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   transform: translateY(1px);
-}
-
-.button-border {
-  border: 0.12em solid #fff;
-}
-
-.shadow-effect {
-  text-shadow: 0.5px 0.5px 60px rgba(0, 0, 0, 0.3);
-}
-
-.shadow-effect-img {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-}
-
-.logo {
-  width: 10em;
 }
 
 h1 {
@@ -119,15 +104,6 @@ img {
   max-width:100%;
   height:auto;
 }
-/** Unificar hover para todos los icons
-i:hover {
-  color: #E8E8E8;
-  fill: red;
-  transition: all 0.3s ease 0s;
-  box-shadow: 0px 0px 80px #fff;
-}
-
-**/
 
 #hero {
   background-image: linear-gradient(to bottom, #174c76, #262a2e);
@@ -154,7 +130,7 @@ i:hover {
 
 #features {
   color: #0088ee;
-  text-align: margin-left;
+  text-align: left;
   position: relative;
 }
 
@@ -167,6 +143,22 @@ i:hover {
   background-color: #fff;
   text-decoration: none;
   padding: 1%;
+}
+
+.button-border {
+  border: 0.12em solid #fff;
+}
+
+.shadow-effect {
+  text-shadow: 0.5px 0.5px 60px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-effect-img {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 10em;
 }
 
 .container-hero {
@@ -202,12 +194,12 @@ i:hover {
 }
 
 .arrow {
-  padding: 0% 0% 1% 0%;
+  padding: 0 0 1% 0;
 }
 
 .arrow-hero {
-  margin-top: 18%;
   margin-bottom: 2%;
+  margin-top: 18%;
 }
 
 .chev {
@@ -233,11 +225,6 @@ i:hover {
   color: #585858;
   transition: all 1s;
   text-shadow: 1px 1px 2px #202020;
-}
-
-.logo-size
-{
-  max-width: 100%;
 }
 
 .title-dark-blue {
@@ -285,6 +272,7 @@ i:hover {
   border:0px !important;
   margin-top: -2px;
 }
+
 .border > img
 {
   width: 100%;
