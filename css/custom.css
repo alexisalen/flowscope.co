@@ -146,78 +146,6 @@ img {
   padding: 1%;
 }
 
-/*************square**********/
-@keyframes move-left-right {
-  0% {
-    transform: translateX(-10px);
-  }
-  50% {
-    transform: translateX(10px);
-  }
-  100% {
-    transform: translateX(-10px);
-  }
-}
-.square-block .squares {
-  animation: move-left-right 1s infinite;
-  background: #1361BF;
-  background: -webkit-linear-gradient(0deg, #1361BF 0%, #1361BF 100%);
-  background: -o-linear-gradient(0deg, #1361BF 0%, #1361BF 100%);
-  background: -moz-linear-gradient(0deg, #1361BF 0%, #1361BF 100%);
-  background: linear-gradient(0deg, #1361BF 0%, #1361BF 100%);
-  position: absolute;
-  transition: 0.5s ease-out;
-  overflow: hidden;
-  border-radius: 5%;
-}
-
-.square-block .squares.square1 {
-  animation: move-left-right 4s infinite;
-  height: 300px;
-  width: 200px;
-  opacity: 0.5;
-  left: 12%;
-  top: 15%;
-}
-
-.square-block .squares.square2 {
-  animation: move-left-right 6s infinite;
-  height: 270px;
-  width: 350px;
-  opacity: 0.4;
-  right: 10%;
-  top: 15%;
-}
-
-.square-block .squares.square3 {
-  animation: move-left-right 10s infinite;
-  height: 125px;
-  width: 125px;
-  opacity: 0.8;
-  right: 3%;
-  top: 30%;
-}
-
-.square-block .squares.square4 {
-  animation: move-left-right 9s infinite;
-  left: 8%;
-  top: 50%;
-  height: 125px;
-  width: 125px;
-  opacity: 0.8;
-}
-
-.square-block .squares.square5 {
-  animation: move-left-right 3s infinite;
-  width: 300px;
-  height: 120px;
-  right: 5%;
-  bottom: 15%;
-  opacity: 0.6;
-}
-
-/*************square**********/
-
 .button-border {
   border: 0.12em solid #fff;
 }
@@ -343,8 +271,7 @@ img {
 
 .border{
   border:0px !important;
-  margin-top: -9px;
-  margin-bottom: -6px;
+  margin-top: -2px;
 }
 
 .border > img
@@ -356,7 +283,45 @@ img {
   -ms-backface-visibility:     hidden;
 }
 
-@media(max-width:767px){
+
+@media screen and (max-width: 480px) {
+  .img-fluid {
+    max-width: 50%;
+  }
+
+  button {
+    padding: 0.5em 3em;
+    font-size: 1.0em;
+  }
+
+
+  h1 {
+    font-size: 3.4em;
+  }
+
+  h2 {
+    font-size: 2.9em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+
+  h5 {
+    font-size: 1.1em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
   .img-fluid {
     max-width: 70%;
   }
@@ -415,14 +380,21 @@ img {
   }
 }
 
+<<<<<<< HEAD
 @media(min-width:768px){
+=======
+@media screen and (min-width: 768px) {
+>>>>>>> parent of 24884ec... break points definition and blocks to animate
   body, html {
     font-size: calc(6px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
   }
 }
+<<<<<<< HEAD
 @media(min-width:992px){}
 @media(min-width:1200px){}
 
+=======
+>>>>>>> parent of 24884ec... break points definition and blocks to animate
 
 /*
 .my-container {
@@ -436,45 +408,6 @@ img {
 .my-col {
   border: 3px dotted green;
 }
-
-@media screen and (max-width: 480px) {
-  .img-fluid {
-    max-width: 50%;
-  }
-
-  button {
-    padding: 0.5em 3em;
-    font-size: 1.0em;
-  }
-
-
-  h1 {
-    font-size: 3.4em;
-  }
-
-  h2 {
-    font-size: 2.9em;
-  }
-
-  h3 {
-    font-size: 1.2em;
-  }
-
-  h4 {
-    font-size: 1.3em;
-  }
-
-  h5 {
-    font-size: 1.1em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-
-}
-
-
 
 /* Extra small devices (phones, 600px and down)
 @media only screen and (max-width: 600px) {...} */
