@@ -8,7 +8,7 @@ body, html {
   scroll-behavior: smooth;
 }
 
-a {
+/a {
   text-decoration: none;
 }
 
@@ -30,7 +30,7 @@ a:active {
 
 button {
   /*background-color: #0088ee;*/
-  background-color: #e26073;
+  background-color: #f50046;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   border: none;
@@ -39,7 +39,7 @@ button {
   text-align: center;
   text-decoration: none;
   font-size: 1.30em;
-  transition: all 1s ease 0s;
+  transition: all 0.8s ease 0s;
   text-shadow: 0 1px 2px black;
   box-shadow: 0 0 70px rgba(0, 0, 0, 0.5);
   border-radius: 30px;
@@ -47,7 +47,7 @@ button {
 
 button:hover {
   /*background: #10a8ff;*/
-  background: #DB3951;
+  background: #97032c
 }
 
 button:active {
@@ -147,6 +147,60 @@ img {
   padding: 1%;
 }
 
+#mailchimp {
+  background: none;
+  color: #f50046;
+  align-items: center;
+}
+
+#mailchimp input {
+    border: medium;
+    color: gray;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    font-size: 1.00em;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+		-webkit-border-radius: 30px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    width: 42%;
+    padding: 1.5% 2%;
+  }
+/*
+  #mailchimp input.email { 
+    background: #fff }
+
+  #mailchimp input.name { 
+    background: #fff}
+*/
+  #mailchimp input[type="submit"] {
+    background-color: #f50046;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.30em;
+    transition: all 0.8s ease 0s;
+    text-shadow: 0 1px 2px black;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 15px; 
+  }
+
+  #mailchimp input[type="submit"]:hover {     
+    background: #97032c
+  }
+
+  #mailchimp input[type="submit"]:active {     
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    transform: translateY(1px);
+  }
+
 /*
 .button-border {
   border: 0.12em solid #fff;
@@ -192,17 +246,19 @@ img {
   padding: 3.5%;
 }
 
+/**
+Class seem to be uneccesary
 .margin-question {
   margin-bottom: 1%;
-}
+}**/
 
 .arrow {
-  padding: 0 0 1% 0;
+  padding: 0 0 4% 0;
 }
 
 .arrow-hero {
-  margin-bottom: 2%;
-  margin-top: 18%;
+  margin-bottom: 4%;
+  margin-top: 10%;
 }
 
 .chev {
@@ -217,6 +273,7 @@ img {
   color: white;
   text-align: right;
 }
+
 
 .nav-link {
   color: white;
@@ -726,6 +783,15 @@ img {
 
 @media(min-width:1200px) {
 
+}
+
+.arrow {
+  padding: 0 0 1% 0;
+}
+
+.arrow-hero {
+  margin-bottom: 2%;
+  margin-top: 18%;
 }
 
 .my-container {
