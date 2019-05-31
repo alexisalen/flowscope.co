@@ -3,12 +3,12 @@ body, html {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 10px;
   font-family: 'Open Sans', sans-serif;
   scroll-behavior: smooth;
 }
 
-/a {
+a {
   text-decoration: none;
 }
 
@@ -111,23 +111,27 @@ img {
   background-image: linear-gradient(to bottom, #174c76, #262a2e);
   color: #fff;
   text-align: center;
+  position: relative;
 }
 
 #why {
   background-color: #0088ee;
   color: #fff;
   text-align: center;
+  position: relative;
 }
 
 #answers {
   color: #0088ee;
   text-align: center;
+  position: relative;
 }
 
 #how {
   background-color: #0088ee;
   color: #fff;
   text-align: center;
+  position: relative;
 }
 
 #features {
@@ -135,6 +139,11 @@ img {
   text-align: left;
   position: relative;
 }
+
+#features img {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+  
 
 #ready {
   background-color: #0088ee;
@@ -210,9 +219,6 @@ img {
 /*.shadow-effect {
   text-shadow: 0.5px 0.5px 60px rgba(0, 0, 0, 0.3);
 }*/
-.shadow-effect-img {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
 
 .logo {
   width: 10em;
@@ -274,17 +280,22 @@ Class seem to be uneccesary
   text-align: right;
 }
 
-
-.nav-link {
+.navbar-collapse a{
   color: white;
   transition: all 1s;
   text-shadow: 1px 1px 2px #202020;
 }
 
-.nav-link:hover {
+.navbar-collapse a:hover {
   color: #585858;
   transition: all 1s;
   text-shadow: 1px 1px 2px #202020;
+}
+
+.feature-title {
+  margin-top: 12%;
+  width: 90%;
+  text-align: left;
 }
 
 .title-dark-blue {
@@ -297,12 +308,6 @@ Class seem to be uneccesary
 
 .title-green {
   color: #16bb9b;
-}
-
-.feature-title {
-  margin-top: 12%;
-  width: 90%;
-  text-align: left;
 }
 
 .feature-description {
@@ -328,11 +333,11 @@ Class seem to be uneccesary
   font-size: 1.8em;
 }
 
+/*
 .border {
   border: 0px !important;
   /*margin-top: -9px;
-  margin-bottom: -6px;*/
-}
+  margin-bottom: -6px;}*/
 
 .border>img {
   width: 100%;
@@ -413,6 +418,22 @@ Class seem to be uneccesary
   right: 10%;
   bottom: 22%;
   opacity: 0.4;
+}
+
+.lengua {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -49px;
+  z-index: 9999;
+}
+
+#hero lengua {
+  fill: [black];
+}
+
+#how lengua {
+  fill: [white];
 }
 
 /*************square**********/
