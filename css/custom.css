@@ -3,7 +3,7 @@ body, html {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 10px;
+  /*font-size: 10px;*/
   font-family: 'Open Sans', sans-serif;
   scroll-behavior: smooth;
 }
@@ -265,7 +265,7 @@ img {
 .padding-light {
   padding: 3.5%;
 }
-
+/*
 .arrow {
   padding: 0 0 4% 0;
 }
@@ -273,7 +273,7 @@ img {
 .arrow-hero {
   margin-bottom: 4%;
   margin-top: 10%;
-}
+}*/
 
 .chev {
   width: 4em;
@@ -428,21 +428,41 @@ img {
 /*************square**********/
 
 @media (max-width:480px)  {
+  #hero {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }   
+
+  .fa-play-circle {
+    padding: 10%;
+  }
+
+  .chev {
+    font-size: 1em;
+  }
+
   button {
-    padding: 0.4em 2em;
+    padding: 0.4em 3em;
     font-size: 0.8em;
   }
 
   h1 {
-    font-size: 2.2em;
+    font-size: 3em;
   }
 
   h2 {
-    font-size: 1.8em;
+    font-size: 3em;
   }
 
   h3 {
-    font-size: 1.1em;
+    font-size: 1.6em;
   }
 
   h4 {
@@ -450,11 +470,11 @@ img {
   }
 
   h5 {
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
 
   p {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   #a-first {
