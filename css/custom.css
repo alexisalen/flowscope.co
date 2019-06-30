@@ -35,7 +35,7 @@ button {
   font-weight: 400;
   border: none;
   color: white;
-  padding: 1% 8%;
+  padding: 0.5em 4em;
   text-align: center;
   text-decoration: none;
   font-size: 1.30em;
@@ -61,6 +61,8 @@ button:active {
   -ms-transform: translateY(1px);
   -o-transform: translateY(1px);
 }
+
+
 
 h1 {
   font-family: 'Raleway', sans-serif;
@@ -156,6 +158,10 @@ img {
   color: #fff;
 }
 
+#ready p {
+  padding: 1.5em;
+}
+
 #footer {
   background-color: #fff;
   text-decoration: none;
@@ -174,8 +180,8 @@ img {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 
-
-  padding: 1% 8%;
+  width: 21.5em;
+  padding: 0.75em; 
   text-decoration: none;
 
   font-size: 1em;
@@ -185,6 +191,14 @@ img {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
 }
+
+#mailchimp button {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-top: 0.5em;
+}
+
+
+
 
 /*
   #mailchimp input.email { 
@@ -221,16 +235,24 @@ img {
   width: 10em;
 }
 
+/*
+.wrap {
+	min-height: calc(100vh - 89px);
+}*/
+
 .container-hero {
-  /*padding: 12% 4% 0% 4%;*/
   margin-top: 12%;
   position: relative;
+}
+
+.container-hero .chev {
+  margin-top: 10%;
 }
 
 .container-x {
   width: 100vw;
   height: auto;
-  padding: 6%;
+  padding: 3.5%;
 
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -265,19 +287,13 @@ img {
   padding: 3.5%;
 }
 
-/*
-.arrow {
-  padding: 0 0 4% 0;
+.chev {
+  padding-bottom: 6em;
+  width: 4em;
 }
 
-.arrow-hero {
-  margin-bottom: 4%;
-  margin-top: 10%;
-}*/
-
-.chev {
-  padding-bottom: 6%;
-  width: 4em;
+#answers .chev {
+  padding-top: 2em;
 }
 
 .navbar-custom {
@@ -444,7 +460,16 @@ img {
 
 
 
-/*************square**********/
+
+
+
+
+/*************XS**********/
+
+/*.wrap {
+	min-height: calc(100vh - 89px);
+}
+*/
 
 @media (max-width:576px) {
   button {
@@ -541,26 +566,32 @@ img {
     order: 1;
   }
 
-  #ready button {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-top: 2px;
+  #mailchimp input {
+    width: 14.5em;
+    padding: 0.3em; 
+    text-decoration: none;
   }
 
-  #ready button:active {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  #mailchimp button {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 0.25em;
+  }
+
+  #mailchimp button:active {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   }
 
   #ready p {
-    padding: 3%;
+    padding: 1em;
   }
 
   #ready form {
     margin-top: 5%;
   }
 
-  #mailchimp input {
-    width: 14.5em;
-}
+
+
+  /*************square**********/
 
   .square-block .squares.square1 {
     animation: move-left-right 12s infinite;
@@ -634,12 +665,7 @@ img {
   }
 
   .chev {
-    /*margin-top: 20%;*/
     font-size: 0.5em;
-  }
-
-  .chev-hero {
-    margin-top: 20%;
   }
 
   .fa-bars {
@@ -659,31 +685,7 @@ img {
   }
 
 
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  @media (min-width:576.1px) and (max-width:768px) {
+  /**@media (min-width:576.1px) and (max-width:768px) {
 
     body,
     html {
@@ -803,41 +805,127 @@ img {
       opacity: 0;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+    @media (min-width:576.1px) and (max-width:768px) {
+  
+      body,
+      html {
+        font-size: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
+      }
+  
+      #a-first {
+        order: 2;
+      }
+  
+      #a-second {
+        order: 1;
+      }
+  
+      #a-third {
+        order: 2;
+      }
+  
+      #a-forth {
+        order: 1;
+      }
+  
+      #a-fifth {
+        order: 2;
+      }
+  
+      #a-sixth {
+        order: 1;
+      }
+  
+      #f-first {
+        order: 2;
+      }
+  
+      #f-second {
+        order: 1;
+      }
+  
+      #f-fifth {
+        order: 2;
+      }
+  
+      #f-sixth {
+        order: 1;
+      }
+  
+      .img-fluid {
+        max-width: 60%;
+      }
+  
+      .logo {
+        width: 10em;
+      }
+  
+      .nav-link {
+        font-size: 0.9em;
+      }
+  
+      .chev {
+        font-size: 0.8em;
+      }
+  
+      .fa-play-circle {
+        font-size: 2.4em;
+      }
+  
+      .fa-bars {
+        font-size: 1.5em;
+      }
+  
+      .footer-text {
+        font-size: 0.9em;
+      }
+  
+      .square-block .squares.square1 {
+        animation: move-left-right 12s infinite;
+        height: 200px;
+        width: 150px;
+        opacity: 0.4;
+        left: 15%;
+        top: 22%;
+      }
+  
+      .square-block .squares.square2 {
+        animation: move-left-right 6s infinite;
+        height: 170px;
+        width: 250px;
+        opacity: 0.4;
+        right: 10%;
+        top: 15%;
+      }
+  
+      .square-block .squares.square3 {
+        animation: move-left-right 8s infinite;
+        height: 125px;
+        width: 125px;
+        opacity: 0.4;
+        right: 25%;
+        top: 40%;
+      }
+  
+      .square-block .squares.square4 {
+        animation: move-left-right 15s infinite;
+        height: 175px;
+        width: 175px;
+        left: 12%;
+        top: 50%;
+        opacity: 0;
+      }
+  
+      .square-block .squares.square5 {
+        animation: move-left-right 7s infinite;
+        width: 200px;
+        height: 300px;
+        right: 10%;
+        bottom: 22%;
+        opacity: 0;
+      }
+    }
 
   @media (min-width:768.1px) and (max-width:992px) {
 
@@ -869,7 +957,7 @@ img {
     /*  .fa-bars {
     font-size: 2em;
   }
-*/
+
     .footer-text {
       font-size: 1em;
     }
@@ -929,9 +1017,9 @@ img {
     }
   }
 
+*/
 
   /*
-
 .my-container {
   border: 3px solid red;
 }
