@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -127,7 +128,6 @@ img {
   position: relative;
 }
 
-
 #answers {
   color: #0088ee;
   text-align: center;
@@ -150,7 +150,7 @@ img {
 #features img {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
-  
+
 #ready {
   background-color: #0088ee;
   color: #fff;
@@ -169,22 +169,23 @@ img {
 }
 
 #mailchimp input {
-    border: medium;
-    color: gray;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+  border: medium;
+  color: gray;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 
 
-    padding: 1% 8%;
-    text-decoration: none;
+  padding: 1% 8%;
+  text-decoration: none;
 
-    font-size: 1em;
-    border-radius: 30px;
-    -moz-border-radius: 30px;
-		-webkit-border-radius: 30px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-    margin-bottom: 10px;
-  }
+  font-size: 1em;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
 /*
   #mailchimp input.email { 
     background: #fff }
@@ -226,9 +227,10 @@ img {
   position: relative;
 }
 
-.container-x{
+.container-x {
   width: 100vw;
-  height: 50vh;
+  height: auto;
+  padding: 6%;
 
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -239,8 +241,7 @@ img {
   justify-content: center;
 
   align-items: center;
-
-  }
+}
 
 .container-fluid {
   max-width: 90%;
@@ -257,12 +258,13 @@ img {
 }
 
 .padding-high {
-  padding: 5%;
+  padding: 6%;
 }
 
 .padding-light {
   padding: 3.5%;
 }
+
 /*
 .arrow {
   padding: 0 0 4% 0;
@@ -274,7 +276,7 @@ img {
 }*/
 
 .chev {
-  margin-top: 5%;
+  padding-bottom: 6%;
   width: 4em;
 }
 
@@ -287,7 +289,7 @@ img {
   text-align: right;
 }
 
-.navbar-collapse a{
+.navbar-collapse a {
   color: white;
   transition: all 1s;
   text-shadow: 1px 1px 2px #202020;
@@ -354,7 +356,8 @@ img {
   position: absolute;
   transition: 0.5s ease-out;
   /*overflow: hidden;
-  */border-radius: 8%;
+  */
+  border-radius: 8%;
   -webkit-animation: move-left-right 2s infinite;
 }
 
@@ -408,6 +411,7 @@ img {
   -webkit-animation: move-left-right 7s infinite;
 }
 
+/*
 .lengua {
   position: absolute;
   left: 0;
@@ -422,7 +426,7 @@ img {
 
 #how lengua {
   fill: [white];
-}
+}*/
 
 
 
@@ -442,8 +446,8 @@ img {
 
 /*************square**********/
 
-@media (max-width:576px)  {
-   button {
+@media (max-width:576px) {
+  button {
     padding: 0.4em 3em;
     font-size: 1em;
   }
@@ -478,6 +482,25 @@ img {
     height: 100vh;
   }
 
+  #why .container-x {
+    width: 100vw;
+    height: 40vh;
+  }
+
+  #how .container-x {
+    width: 100vw;
+    height: 60vh;
+  }
+
+  #ready .container-x {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #features img {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
   #a-first {
     order: 2;
   }
@@ -518,65 +541,75 @@ img {
     order: 1;
   }
 
-  #why .container-x{
-    width: 100vw;
-    height: 40vh;
-    }
+  #ready button {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 2px;
+  }
 
-  #how .container-x{
-    width: 100vw;
-    height: 60vh;
-    }
+  #ready button:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
 
-   #ready .container-x{
-    width: 100vw;
-    height: 100vh;
-    }
+  #ready p {
+    padding: 3%;
+  }
 
-    .square-block .squares.square1 {
-      animation: move-left-right 12s infinite;
-      height: 130px;
-      width: 100px;
-      opacity: 0.4;
-      left: 15%;
-      top: 42%;
-    }
-  
-    .square-block .squares.square2 {
-      animation: move-left-right 6s infinite;
-      height: 110px;
-      width: 180px;
-      opacity: 0.4;
-      right: 10%;
-      top: 25%;
-    }
-  
-    .square-block .squares.square3 {
-      animation: move-left-right 8s infinite;
-      height: 100px;
-      width: 100px;
-      opacity: 0.4;
-      right: 25%;
-      top: 60%;
-    }
-  
-    .square-block .squares.square4 {
-      animation: move-left-right 15s infinite;
-      height: 175px;
-      width: 175px;
-      left: 12%;
-      top: 50%;
-      opacity: 0;
-    }
-  
-    .square-block .squares.square5 {
-      animation: move-left-right 7s infinite;
-      width: 200px;
-      height: 300px;
-      right: 10%;
-      bottom: 22%;
-      opacity: 0;
-    }
+  #ready form {
+    margin-top: 5%;
+  }
+
+  #mailchimp input {
+    width: 14.5em;
+}
+
+  .square-block .squares.square1 {
+    animation: move-left-right 12s infinite;
+    height: 130px;
+    width: 100px;
+    opacity: 0.4;
+    left: 15%;
+    top: 42%;
+  }
+
+  .square-block .squares.square2 {
+    animation: move-left-right 6s infinite;
+    height: 110px;
+    width: 180px;
+    opacity: 0.4;
+    right: 10%;
+    top: 25%;
+  }
+
+  .square-block .squares.square3 {
+    animation: move-left-right 8s infinite;
+    height: 100px;
+    width: 100px;
+    opacity: 0.4;
+    right: 25%;
+    top: 60%;
+  }
+
+  .square-block .squares.square4 {
+    animation: move-left-right 15s infinite;
+    height: 175px;
+    width: 175px;
+    left: 12%;
+    top: 50%;
+    opacity: 0;
+  }
+
+  .square-block .squares.square5 {
+    animation: move-left-right 7s infinite;
+    width: 200px;
+    height: 300px;
+    right: 10%;
+    bottom: 22%;
+    opacity: 0;
+  }
+
+  .logo {
+    width: 5.5em;
+  }
 
   .container-hero {
     padding: 10%;
@@ -591,14 +624,10 @@ img {
     justify-content: center;
   }
 
-  .logo {
-    width: 5.5em;
+  .img-fluid {
+    max-width: 90%;
   }
 
-  .nav-link {
-    font-size: 7.5em;
-  }
-  
   .fa-play-circle {
     font-size: 2em;
     padding: 10%;
@@ -612,7 +641,7 @@ img {
   .chev-hero {
     margin-top: 20%;
   }
-  
+
   .fa-bars {
     font-size: 1em;
   }
@@ -620,7 +649,7 @@ img {
   .feature-title {
     width: 100%;
   }
-  
+
   .feature-description {
     width: 100%;
   }
@@ -629,27 +658,157 @@ img {
     font-size: 0.7em;
   }
 
- 
-  #features img {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width:576.1px) and (max-width:768px) {
+
+    body,
+    html {
+      font-size: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
+    }
+
+    #a-first {
+      order: 2;
+    }
+
+    #a-second {
+      order: 1;
+    }
+
+    #a-third {
+      order: 2;
+    }
+
+    #a-forth {
+      order: 1;
+    }
+
+    #a-fifth {
+      order: 2;
+    }
+
+    #a-sixth {
+      order: 1;
+    }
+
+    #f-first {
+      order: 2;
+    }
+
+    #f-second {
+      order: 1;
+    }
+
+    #f-fifth {
+      order: 2;
+    }
+
+    #f-sixth {
+      order: 1;
+    }
+
+    .img-fluid {
+      max-width: 60%;
+    }
+
+    .logo {
+      width: 10em;
+    }
+
+    .nav-link {
+      font-size: 0.9em;
+    }
+
+    .chev {
+      font-size: 0.8em;
+    }
+
+    .fa-play-circle {
+      font-size: 2.4em;
+    }
+
+    .fa-bars {
+      font-size: 1.5em;
+    }
+
+    .footer-text {
+      font-size: 0.9em;
+    }
+
+    .square-block .squares.square1 {
+      animation: move-left-right 12s infinite;
+      height: 200px;
+      width: 150px;
+      opacity: 0.4;
+      left: 15%;
+      top: 22%;
+    }
+
+    .square-block .squares.square2 {
+      animation: move-left-right 6s infinite;
+      height: 170px;
+      width: 250px;
+      opacity: 0.4;
+      right: 10%;
+      top: 15%;
+    }
+
+    .square-block .squares.square3 {
+      animation: move-left-right 8s infinite;
+      height: 125px;
+      width: 125px;
+      opacity: 0.4;
+      right: 25%;
+      top: 40%;
+    }
+
+    .square-block .squares.square4 {
+      animation: move-left-right 15s infinite;
+      height: 175px;
+      width: 175px;
+      left: 12%;
+      top: 50%;
+      opacity: 0;
+    }
+
+    .square-block .squares.square5 {
+      animation: move-left-right 7s infinite;
+      width: 200px;
+      height: 300px;
+      right: 10%;
+      bottom: 22%;
+      opacity: 0;
+    }
   }
 
-  #ready h1 {
-    font-size: 2.2em;
-  }
 
-  #ready button {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-top: 2px;
-}
 
-  #ready button:active {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
 
 
 
-    
 
 
 
@@ -669,247 +828,109 @@ img {
 
 
 
-@media (min-width:576.1px) and (max-width:768px) {
-  body, html {
-    font-size: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-  }
 
-  #a-first {
-    order: 2;
-  }
 
-  #a-second {
-    order: 1;
-  }
 
-  #a-third {
-    order: 2;
-  }
 
-  #a-forth {
-    order: 1;
-  }
 
-  #a-fifth {
-    order: 2;
-  }
 
-  #a-sixth {
-    order: 1;
-  }
 
-  #f-first {
-    order: 2;
-  }
 
-  #f-second {
-    order: 1;
-  }
 
-  #f-fifth {
-    order: 2;
-  }
 
-  #f-sixth {
-    order: 1;
-  }
 
-  .img-fluid {
-    max-width: 60%;
-  }
+  @media (min-width:768.1px) and (max-width:992px) {
 
-  .logo {
-    width: 10em;
-  }
+    body,
+    html {
+      font-size: calc(6px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
+    }
 
-  .nav-link {
-    font-size: 0.9em;
-  }
+    .img-fluid {
+      max-width: 80%;
+    }
 
-  .chev {
-    font-size: 0.8em;
-  }
+    .logo {
+      width: 10em;
+    }
 
-  .fa-play-circle {
-    font-size: 2.4em;
-  }
+    .nav-link {
+      font-size: 1.1em;
+    }
 
-  .fa-bars {
-    font-size: 1.5em;
-  }
+    .chev {
+      font-size: 1em;
+    }
 
-  .footer-text {
-    font-size: 0.9em;
-  }
+    .fa-play-circle {
+      font-size: 3.0em;
+    }
 
-  .square-block .squares.square1 {
-    animation: move-left-right 12s infinite;
-    height: 200px;
-    width: 150px;
-    opacity: 0.4;
-    left: 15%;
-    top: 22%;
-  }
-
-  .square-block .squares.square2 {
-    animation: move-left-right 6s infinite;
-    height: 170px;
-    width: 250px;
-    opacity: 0.4;
-    right: 10%;
-    top: 15%;
-  }
-
-  .square-block .squares.square3 {
-    animation: move-left-right 8s infinite;
-    height: 125px;
-    width: 125px;
-    opacity: 0.4;
-    right: 25%;
-    top: 40%;
-  }
-
-  .square-block .squares.square4 {
-    animation: move-left-right 15s infinite;
-    height: 175px;
-    width: 175px;
-    left: 12%;
-    top: 50%;
-    opacity: 0;
-  }
-
-  .square-block .squares.square5 {
-    animation: move-left-right 7s infinite;
-    width: 200px;
-    height: 300px;
-    right: 10%;
-    bottom: 22%;
-    opacity: 0;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width:768.1px) and (max-width:992px) {
-  body, html {
-    font-size: calc(6px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-  }
-
-  .img-fluid {
-    max-width: 80%;
-  }
-
-  .logo {
-    width: 10em;
-  }
-
-  .nav-link {
-    font-size: 1.1em;
-  }
-
-  .chev {
-    font-size: 1em;
-  }
-
-  .fa-play-circle {
-    font-size: 3.0em;
-  }
-/*  .fa-bars {
+    /*  .fa-bars {
     font-size: 2em;
   }
 */
-  .footer-text {
-    font-size: 1em;
+    .footer-text {
+      font-size: 1em;
+    }
+
+    .square-block .squares.square1 {
+      animation: move-left-right 12s infinite;
+      height: 250px;
+      width: 150px;
+      opacity: 0.4;
+      left: 15%;
+      top: 22%;
+    }
+
+    .square-block .squares.square2 {
+      animation: move-left-right 6s infinite;
+      height: 220px;
+      width: 300px;
+      opacity: 0.4;
+      right: 10%;
+      top: 15%;
+    }
+
+    .square-block .squares.square3 {
+      animation: move-left-right 8s infinite;
+      height: 150px;
+      width: 150px;
+      opacity: 0.4;
+      right: 30%;
+      top: 45%;
+    }
+
+    .square-block .squares.square4 {
+      animation: move-left-right 15s infinite;
+      height: 175px;
+      width: 175px;
+      left: 12%;
+      top: 50%;
+      opacity: 0;
+    }
+
+    .square-block .squares.square5 {
+      animation: move-left-right 7s infinite;
+      width: 200px;
+      height: 300px;
+      right: 10%;
+      bottom: 22%;
+      opacity: 0;
+    }
+
   }
 
-  .square-block .squares.square1 {
-    animation: move-left-right 12s infinite;
-    height: 250px;
-    width: 150px;
-    opacity: 0.4;
-    left: 15%;
-    top: 22%;
+  @media(min-width:992.1px) {
+
+    body,
+    html {
+      font-size: calc(6px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
+    }
   }
 
-  .square-block .squares.square2 {
-    animation: move-left-right 6s infinite;
-    height: 220px;
-    width: 300px;
-    opacity: 0.4;
-    right: 10%;
-    top: 15%;
-  }
 
-  .square-block .squares.square3 {
-    animation: move-left-right 8s infinite;
-    height: 150px;
-    width: 150px;
-    opacity: 0.4;
-    right: 30%;
-    top: 45%;
-  }
-
-  .square-block .squares.square4 {
-    animation: move-left-right 15s infinite;
-    height: 175px;
-    width: 175px;
-    left: 12%;
-    top: 50%;
-    opacity: 0;
-  }
-
-  .square-block .squares.square5 {
-    animation: move-left-right 7s infinite;
-    width: 200px;
-    height: 300px;
-    right: 10%;
-    bottom: 22%;
-    opacity: 0;
-  }
-
-}
-
-@media(min-width:992.1px) {
-  body, html {
-    font-size: calc(6px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-  }
-}
-
-
-/*
+  /*
 
 .my-container {
   border: 3px solid red;
@@ -938,13 +959,13 @@ img {
 
 /* Extra small devices (phones, 600px and down)
 @media only screen and (max-width: 600px) {...} */
-/* Small devices (portrait tablets and large phones, 600px and up)
+  /* Small devices (portrait tablets and large phones, 600px and up)
 @media only screen and (min-width: 600px) {...} */
-/* Medium devices (landscape tablets, 768px and up)
+  /* Medium devices (landscape tablets, 768px and up)
 @media only screen and (min-width: 768px) {...} */
-/* Large devices (laptops/desktops, 992px and up)
+  /* Large devices (laptops/desktops, 992px and up)
 @media only screen and (min-width: 992px) {...} */
-/* Extra large devices (large laptops and desktops, 1200px and up)
+  /* Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {...}
 
 */
