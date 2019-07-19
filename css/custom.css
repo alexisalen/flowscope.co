@@ -1,10 +1,12 @@
+
+
 body,
 html {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-  /*font-size: 10px;*/
+  font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   scroll-behavior: smooth;
 }
@@ -16,18 +18,6 @@ a {
 a:hover {
   color: #585858;
 }
-
-/*a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}*/
 
 button {
   background-color: #f50046;
@@ -61,8 +51,6 @@ button:active {
   -ms-transform: translateY(1px);
   -o-transform: translateY(1px);
 }
-
-
 
 h1 {
   font-family: 'Raleway', sans-serif;
@@ -98,211 +86,43 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.5em;
   text-align: center;
 }
 
-i {
+/*i {
   background-color: transparent;
   color: white;
 }
 
 li {
   padding-left: 2.5em;
-}
+}*/
 
 img {
   max-width: 100%;
   height: auto;
 }
 
-#hero {
-  background-image: linear-gradient(to bottom, #174c76, #262a2e);
-  color: #fff;
-  text-align: center;
-  position: relative;
+.container {
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
-#why {
-  background-color: #0088ee;
-  color: #fff;
-  text-align: center;
-  position: relative;
-}
-
-#answers {
-  color: #0088ee;
-  text-align: center;
-  position: relative;
-}
-
-#how {
-  background-color: #0088ee;
-  color: #fff;
-  text-align: center;
-  position: relative;
-}
-
-#features {
-  color: #0088ee;
-  text-align: left;
-  position: relative;
-}
-
-#features img {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-}
-
-#ready {
-  background-color: #0088ee;
-  color: #fff;
-}
-
-#ready p {
-  padding: 1.5em;
-}
-
-#footer {
-  background-color: #fff;
-  text-decoration: none;
-  padding: 1%;
-}
-
-#mailchimp {
-  background: none;
-  color: #f50046;
-  align-items: center;
-}
-
-#mailchimp input {
-  border: medium;
-  color: gray;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-
-  width: 21.5em;
-  padding: 0.75em; 
-  text-decoration: none;
-
-  font-size: 1em;
-  border-radius: 30px;
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-  margin-bottom: 10px;
-}
-
-#mailchimp button {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  margin-top: 0.5em;
-}
-
-
-
-
-/*
-  #mailchimp input.email { 
-    background: #fff }
-
-  #mailchimp input.name { 
-    background: #fff}
-
-  #mailchimp input[type="submit"] {
-    background-color: #f50046;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    border: none;
-    color: white;
-    padding: 1% 8%;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.30em;
-    transition: all 0.8s ease 0s;
-    text-shadow: 0 1px 2px black;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
-    border-radius: 30px;
-    cursor: pointer;
-    margin-top: 1%; 
-
-    -webkit-transition: all 0.8s ease 0s;
-    -moz-transition: all 0.8s ease 0s;
-    -ms-transition: all 0.8s ease 0s;
-    -o-transition: all 0.8s ease 0s;
-  }
-*/
-
-.logo {
-  width: 10em;
-}
-
-/*
-.wrap {
-	min-height: calc(100vh - 89px);
-}*/
-
-.container-hero {
-  margin-top: 12%;
-  position: relative;
-}
-
-.container-hero .chev {
-  margin-top: 10%;
-}
-
-.container-x {
-  width: 100vw;
-  height: auto;
-  padding: 3.5%;
-
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-
-  flex-direction: column;
-
-  justify-content: center;
-
-  align-items: center;
-}
-
-.container-fluid {
-  max-width: 90%;
-}
-
-.grid {
-  background-image: radial-gradient(hsla(0, 0%, 15%, 0.91) 4%, transparent 0);
-  background-size: 3.75em 3.75em;
-}
-
-.vertical-align {
-  display: flex;
-  align-items: center;
-}
-
-.padding-high {
-  padding: 6%;
-}
-
-.padding-light {
-  padding: 3.5%;
-}
-
-.chev {
-  padding-bottom: 6em;
-  width: 4em;
-}
-
-#answers .chev {
-  padding-top: 2em;
-}
+/*NAVBAR*/
 
 .navbar-custom {
-  padding: 1.2em;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1 2em;
   font-size: 1.1em;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: white;
-  text-align: right;
+  background: #f50046;
+}
+
+.navbar-custom div ul li {
+  float: right;
 }
 
 .navbar-collapse a {
@@ -317,34 +137,29 @@ img {
   text-shadow: 1px 1px 2px #202020;
 }
 
-.feature-title {
+/*NAVBAR-END*/
+
+/*HERO*/
+
+#hero {
+  background-image: linear-gradient(to bottom, #174c76, #262a2e);
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.container-hero { /* FIX */
   margin-top: 12%;
-  margin-bottom: 6%;
-  width: 90%;
-  text-align: left;
+  position: relative;
 }
 
-.feature-description {
-  color: black;
-  width: 90%;
-  text-align: left;
+.container-hero .chev {
+  margin-top: 10%; /* FIX */
 }
 
-.footer-text {
-  font-size: 1.1em;
-  font-family: 'Open Sans';
-  font-weight: 400;
-  color: #909090;
-  transition: all 1s;
-  text-decoration: none;
-}
-
-.fa-play-circle {
-  font-size: 4em;
-}
-
-.fa-bars {
-  font-size: 1.8em;
+.grid {
+  background-image: radial-gradient(hsla(0, 0%, 15%, 0.91) 4%, transparent 0);
+  background-size: 3.75em 3.75em;
 }
 
 /*************square**********/
@@ -427,6 +242,205 @@ img {
   -webkit-animation: move-left-right 7s infinite;
 }
 
+
+/*HERO-END*/
+
+
+/*WHY*/
+
+#why {
+  background-color: #0088ee;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+
+
+/*.container-x {
+  width: 100vw;
+  height: auto;
+  padding: 3.5%;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+}
+*/
+
+/*WHY-END*/
+
+
+/*ANSWERS*/
+
+#answers {
+  color: #0088ee;
+  text-align: center;
+  position: relative;
+}
+
+#answers .container {
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+#answers .chev {/* FIX */
+  padding-top: 2em;
+}
+
+/*ANSWERS-END*/
+
+
+/*HOW*/
+
+#how {
+  background-color: #0088ee;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+/*HOW-END*/
+
+
+
+/*FEATURES*/
+
+#features {
+  color: #0088ee;
+  text-align: left;
+  position: relative;
+}
+
+#features img {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.container-fluid {
+  max-width: 90%;
+}
+
+.feature-title {
+  margin-top: 12%;
+  margin-bottom: 6%;
+  width: 90%;
+  text-align: left;
+}
+
+.feature-description {
+  color: black;
+  width: 90%;
+  text-align: left;
+}
+
+/*FEATURES-END*/
+
+
+/*READY*/
+
+#ready {
+  background-color: #0088ee;
+  color: #fff;
+}
+
+#ready p {
+  padding: 1.5em;
+}
+
+#mailchimp {
+  background: none;
+  color: #f50046;
+  align-items: center;
+}
+
+#mailchimp input {
+  border: medium;
+  color: gray;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+
+  width: 21.5em;
+  padding: 0.75em; 
+  text-decoration: none;
+
+  font-size: 1em;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+#mailchimp button {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-top: 0.5em;
+}
+
+/*READY-END*/
+
+/*FOOTER*/
+
+#footer {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 1%;
+}
+
+.logo {
+  width: 10em;
+}
+
+.footer-text {
+  font-size: 1.1em;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color: #909090;
+  transition: all 1s;
+  text-decoration: none;
+}
+
+/*FOOTER-END*/
+
+
+/*MISC*/
+
+/*.padding-high {
+  padding: 6%;
+}*/
+
+.padding-light {/* FIX */
+  padding: 3.5%;
+}
+
+.chev {
+  padding-bottom: 6em;
+  width: 4em;
+}
+
+
+.fa-play-circle { /* FIX */
+  font-size: 4em;
+}
+
+.fa-bars {
+  font-size: 1.8em; /* FIX */
+}
+
+
+
 /*
 .lengua {
   position: absolute;
@@ -445,85 +459,110 @@ img {
 }*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*************XS**********/
-
-/*.wrap {
-	min-height: calc(100vh - 89px);
+@media screen and (min-width: 992.1px) and (max-width:1200px) { 
+  body {
+    font-size: 15px;
+  }
+  
+  .feature-title {
+    margin-top: 3%;
+    width: 100%;
+  }
+  
+  .feature-description {
+    width: 100%;
+  }
 }
-*/
 
-@media (max-width:576px) {
-  button {
-    padding: 0.4em 3em;
-    font-size: 1em;
-  }
 
-  h1 {
-    font-size: 2.5em;
-  }
-
-  h2 {
-    font-size: 2.5em;
-  }
-
-  h3 {
-    font-size: 1.5em;
-  }
-
-  h4 {
-    font-size: 1.5em;
-  }
-
-  h5 {
-    font-size: 1.1em;
+@media screen and (min-width: 768.1px) and (max-width:992px) { 
+  body {
+    font-size: 14px;
   }
 
   p {
-    font-size: 1em;
+    line-height: 2em;
   }
 
-  #hero {
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
+  #f-first {
+    order: 2;
   }
 
-  #why .container-x {
-    width: 100vw;
-    height: 40vh;
+  #f-second {
+    order: 1;
   }
 
-  #how .container-x {
-    width: 100vw;
-    height: 60vh;
+  #f-fifth {
+    order: 2;
   }
 
-  #ready .container-x {
-    width: 100vw;
-    height: 100vh;
+  #f-sixth {
+    order: 1;
   }
 
   #features img {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .feature-title {
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 3%;
+  }
+
+  .feature-description {
+    width: 100%;
+  }
+
+  #ready p {
+    padding: 1 0em;
+  }
+
+  #ready {
+    padding-top: 6%;
+    padding-bottom: 6%;
+  }
+
+  #footer {
+    width: 90%;
+  }
+
+  .logo {
+    width: 7em;
+  }
+  /*
+  .container-fluid {
+    max-width: 100%;
+  }
+  
+  .feature-title {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 100%;
+  }
+  .feature-description {
+    width: 100%;
+  }
+  */
+
+}
+
+@media screen and (min-width: 480.1px) and (max-width:768px) { 
+
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 3.5em;
+  }
+
+  p {
+    line-height: 2em;
   }
 
   #a-first {
@@ -566,6 +605,172 @@ img {
     order: 1;
   }
 
+  #features img {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  }
+
+  #ready p {
+    padding: 1 0em;
+  }
+
+  #ready {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  #footer {
+    width: 100%;
+  }
+
+  .logo {
+    width: 6em;
+  }
+
+  /*.container-hero {
+    padding: 10%;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    justify-content: center;
+  }*/
+
+  .img-fluid {
+    max-width: 90%;
+  }
+
+  .fa-play-circle {
+    padding: 6%;
+    font-size: 2.5em;
+  }
+
+  .chev {
+    font-size: 0.8em;
+  }
+
+
+  /*.fa-bars {
+    font-size: 1em;
+  }*/
+
+
+  .feature-title {
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 3%;
+  }
+
+  .feature-description {
+    width: 100%;
+  }
+
+}
+
+
+/*************XS**********/
+
+@media screen and (max-width:480px) {
+
+  button {
+    padding: 0.4em 3em;
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  h5 {
+    font-size: 1.1em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 2em;
+  }
+
+  #hero {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+ /* section#why .container-x {
+    width: 100vw;
+    height: 35vh;
+  }
+
+ #how .container-x {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  #ready .container-x {
+    width: 100vw;
+    height: auto;
+  }*/
+
+
+  #a-first {
+    order: 2;
+  }
+
+  #a-second {
+    order: 1;
+  }
+
+  #a-third {
+    order: 2;
+  }
+
+  #a-forth {
+    order: 1;
+  }
+
+  #a-fifth {
+    order: 2;
+  }
+
+  #a-sixth {
+    order: 1;
+  }
+
+  #f-first {
+    order: 2;
+  }
+
+  #f-second {
+    order: 1;
+  }
+
+  #f-fifth {
+    order: 2;
+  }
+
+  #f-sixth {
+    order: 1;
+  }
+  
+  #features img {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+
   #mailchimp input {
     width: 14.5em;
     padding: 0.3em; 
@@ -582,11 +787,17 @@ img {
   }
 
   #ready p {
-    padding: 1em;
+    padding: 1 0em;
   }
 
-  #ready form {
-    margin-top: 5%;
+  #ready {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+
+  #footer {
+    width: 100%;
   }
 
 
@@ -668,12 +879,14 @@ img {
     font-size: 0.5em;
   }
 
-  .fa-bars {
+  /*.fa-bars {
     font-size: 1em;
-  }
+  }*/
 
   .feature-title {
     width: 100%;
+    margin-top: 6%;
+    margin-bottom: 3%;
   }
 
   .feature-description {
@@ -684,364 +897,23 @@ img {
     font-size: 0.7em;
   }
 
-
-  /**@media (min-width:576.1px) and (max-width:768px) {
-
-    body,
-    html {
-      font-size: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-    }
-
-    #a-first {
-      order: 2;
-    }
-
-    #a-second {
-      order: 1;
-    }
-
-    #a-third {
-      order: 2;
-    }
-
-    #a-forth {
-      order: 1;
-    }
-
-    #a-fifth {
-      order: 2;
-    }
-
-    #a-sixth {
-      order: 1;
-    }
-
-    #f-first {
-      order: 2;
-    }
-
-    #f-second {
-      order: 1;
-    }
-
-    #f-fifth {
-      order: 2;
-    }
-
-    #f-sixth {
-      order: 1;
-    }
-
-    .img-fluid {
-      max-width: 60%;
-    }
-
-    .logo {
-      width: 10em;
-    }
-
-    .nav-link {
-      font-size: 0.9em;
-    }
-
-    .chev {
-      font-size: 0.8em;
-    }
-
-    .fa-play-circle {
-      font-size: 2.4em;
-    }
-
-    .fa-bars {
-      font-size: 1.5em;
-    }
-
-    .footer-text {
-      font-size: 0.9em;
-    }
-
-    .square-block .squares.square1 {
-      animation: move-left-right 12s infinite;
-      height: 200px;
-      width: 150px;
-      opacity: 0.4;
-      left: 15%;
-      top: 22%;
-    }
-
-    .square-block .squares.square2 {
-      animation: move-left-right 6s infinite;
-      height: 170px;
-      width: 250px;
-      opacity: 0.4;
-      right: 10%;
-      top: 15%;
-    }
-
-    .square-block .squares.square3 {
-      animation: move-left-right 8s infinite;
-      height: 125px;
-      width: 125px;
-      opacity: 0.4;
-      right: 25%;
-      top: 40%;
-    }
-
-    .square-block .squares.square4 {
-      animation: move-left-right 15s infinite;
-      height: 175px;
-      width: 175px;
-      left: 12%;
-      top: 50%;
-      opacity: 0;
-    }
-
-    .square-block .squares.square5 {
-      animation: move-left-right 7s infinite;
-      width: 200px;
-      height: 300px;
-      right: 10%;
-      bottom: 22%;
-      opacity: 0;
-    }
-  }
-  
-    @media (min-width:576.1px) and (max-width:768px) {
-  
-      body,
-      html {
-        font-size: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-      }
-  
-      #a-first {
-        order: 2;
-      }
-  
-      #a-second {
-        order: 1;
-      }
-  
-      #a-third {
-        order: 2;
-      }
-  
-      #a-forth {
-        order: 1;
-      }
-  
-      #a-fifth {
-        order: 2;
-      }
-  
-      #a-sixth {
-        order: 1;
-      }
-  
-      #f-first {
-        order: 2;
-      }
-  
-      #f-second {
-        order: 1;
-      }
-  
-      #f-fifth {
-        order: 2;
-      }
-  
-      #f-sixth {
-        order: 1;
-      }
-  
-      .img-fluid {
-        max-width: 60%;
-      }
-  
-      .logo {
-        width: 10em;
-      }
-  
-      .nav-link {
-        font-size: 0.9em;
-      }
-  
-      .chev {
-        font-size: 0.8em;
-      }
-  
-      .fa-play-circle {
-        font-size: 2.4em;
-      }
-  
-      .fa-bars {
-        font-size: 1.5em;
-      }
-  
-      .footer-text {
-        font-size: 0.9em;
-      }
-  
-      .square-block .squares.square1 {
-        animation: move-left-right 12s infinite;
-        height: 200px;
-        width: 150px;
-        opacity: 0.4;
-        left: 15%;
-        top: 22%;
-      }
-  
-      .square-block .squares.square2 {
-        animation: move-left-right 6s infinite;
-        height: 170px;
-        width: 250px;
-        opacity: 0.4;
-        right: 10%;
-        top: 15%;
-      }
-  
-      .square-block .squares.square3 {
-        animation: move-left-right 8s infinite;
-        height: 125px;
-        width: 125px;
-        opacity: 0.4;
-        right: 25%;
-        top: 40%;
-      }
-  
-      .square-block .squares.square4 {
-        animation: move-left-right 15s infinite;
-        height: 175px;
-        width: 175px;
-        left: 12%;
-        top: 50%;
-        opacity: 0;
-      }
-  
-      .square-block .squares.square5 {
-        animation: move-left-right 7s infinite;
-        width: 200px;
-        height: 300px;
-        right: 10%;
-        bottom: 22%;
-        opacity: 0;
-      }
-    }
-
-  @media (min-width:768.1px) and (max-width:992px) {
-
-    body,
-    html {
-      font-size: calc(6px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-    }
-
-    .img-fluid {
-      max-width: 80%;
-    }
-
-    .logo {
-      width: 10em;
-    }
-
-    .nav-link {
-      font-size: 1.1em;
-    }
-
-    .chev {
-      font-size: 1em;
-    }
-
-    .fa-play-circle {
-      font-size: 3.0em;
-    }
-
-    /*  .fa-bars {
-    font-size: 2em;
+ 
   }
 
-    .footer-text {
-      font-size: 1em;
-    }
+/*************SM**********/
 
-    .square-block .squares.square1 {
-      animation: move-left-right 12s infinite;
-      height: 250px;
-      width: 150px;
-      opacity: 0.4;
-      left: 15%;
-      top: 22%;
-    }
 
-    .square-block .squares.square2 {
-      animation: move-left-right 6s infinite;
-      height: 220px;
-      width: 300px;
-      opacity: 0.4;
-      right: 10%;
-      top: 15%;
-    }
-
-    .square-block .squares.square3 {
-      animation: move-left-right 8s infinite;
-      height: 150px;
-      width: 150px;
-      opacity: 0.4;
-      right: 30%;
-      top: 45%;
-    }
-
-    .square-block .squares.square4 {
-      animation: move-left-right 15s infinite;
-      height: 175px;
-      width: 175px;
-      left: 12%;
-      top: 50%;
-      opacity: 0;
-    }
-
-    .square-block .squares.square5 {
-      animation: move-left-right 7s infinite;
-      width: 200px;
-      height: 300px;
-      right: 10%;
-      bottom: 22%;
-      opacity: 0;
-    }
-
-  }
-
-  @media(min-width:992.1px) {
-
-    body,
-    html {
-      font-size: calc(6px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
-    }
-  }
-
-*/
-
-  /*
-.my-container {
-  border: 3px solid red;
+  /**
+@media all and (max-width: 1690px) { ...}
+@media all and (max-width: 1280px) { ...}
+@media all and (max-width: 980px) { ... }
+@media all and (max-width: 736px) { ... }
+@media all and (max-width: 480px) { ... }
+  
+  
+.wrap {
+	min-height: calc(100vh - 89px);
 }
-
-.my-row {
-  border: 3px dotted blue;
-}
-
-.my-col {
-  border: 3px dotted green;
-}
-
-
-.arrow {
-  padding: 0 0 1% 0;
-}
-
-.arrow-hero {
-  margin-bottom: 2%;
-  margin-top: 18%;
-}
-
 
 576, 768, 992, 1200
 

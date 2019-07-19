@@ -13,10 +13,13 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
   <link rel="stylesheet" href="icons/rik-icons/styles.css">
+
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
 
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -30,28 +33,27 @@
 
   <section id="hero">
     <div class="grid">
-      <div class="container my-container">
-        <nav class="navbar navbar-expand-sm navbar-custom static-top">
-          <a href="#" class="navbar-brand">
-            <img align="left" class="logo img-fluid" src="img/svg/fs_logo_white.svg"></a>
-          <span class="navbar-toggler" data-toggle="collapse" data-target="#menu_navbar">
+
+      <nav class="navbar navbar-expand-sm navbar-custom static-top" id="menumovil">
+        <a href="#" class="navbar-brand">
+          <img class="logo img-fluid" src="img/svg/fs_logo_white.svg"></a>
+        <!--<span class="navbar-toggler" data-toggle="collapse" data-target="#menu_navbar">
             <i class="fas fa-bars"></i>
-          </span>
-          <div class="collapse navbar-collapse hidden-xs" id="menu_navbar">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#why">Why</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#how">How</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#ready">When</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+          </span>-->
+        <!--<div class="collapse navbar-collapse hidden-xs" id="menu_navbar">-->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#why">Why</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#how">How</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ready">When</a>
+          </li>
+        </ul>
+        <!--</div>-->
+      </nav>
 
       <div class="square-block">
         <div class="squares square1"></div>
@@ -64,7 +66,7 @@
       <div class="container my-container container-hero">
         <h1>Visualize Your Business</h1>
         <h5>Create your company flows and procedures effectively</h5>
-        <i class="fas fa-play-circle padding-high"></i></br>
+        <i class="fas fa-play-circle"></i></br>
         <a href="#ready"><button>JOIN WAITING LIST</button></a></br>
         <a href="#why">
           <img class="chev chev-hero" src="img/svg/fs_chevron_white.svg"></a>
@@ -77,7 +79,7 @@
   </section>
 
   <section id="why">
-    <div class="container my-container container-x">
+    <div class="container">
       <h1>Why a documentation tool?</h1>
     </div>
     <div>
@@ -92,7 +94,7 @@
   </section>
 
   <section id="answers">
-    <div class="container my-container padding-light">
+    <div class="container my-container">
 
       <div class="padding-light">
         <div class="row my-row padding-light">
@@ -163,7 +165,7 @@
 
 
   <section id="how">
-    <div class="container my-container container-x">
+    <div class="container my-container">
       <h1>Simple, we combined flowcharts and docs in a single tool</h1>
     </div>
     <div>
@@ -181,10 +183,10 @@
   <section id="features">
     <div align=center class="container-fluid my-container padding-light">
       <div class="row my-row padding-light">
-        <div id="f-first" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 my-col">
+        <div id="f-first" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 my-col">
           <img align=left src="img/fs-ph-1.png">
         </div>
-        <div id="f-second" class="col-xs-0 col-sm-0 col-md-6 col-lg-6 my-col">
+        <div id="f-second" class="col-xs-0 col-sm-0 col-md-0 col-lg-6 my-col">
           <h4 class="feature-title title-light-blue" style="color:#0088ee">Clear flows and processes</h4>
           <p class="feature-description">Build flows and add templates, attachments, media, checklists or any other
             action items associated with your business processes.</p>
@@ -192,21 +194,21 @@
       </div>
 
       <div class="row my-row padding-light">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 my-col">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 my-col">
           <h4 color=black class="feature-title" style="color: #16bb9b">A view for everyone</h4>
           <p class="feature-description">Create teams and process areas defining transparent collaborative spaces where
             procedures live.</p>
         </div>
-        <div class="col-xs-0 col-sm-0 col-md-6 col-lg-6 my-col">
+        <div class="col-xs-0 col-sm-0 col-md-0 col-lg-6 my-col">
           <img align=left src="img/fs-ph-1.png">
         </div>
       </div>
 
       <div class="row my-row padding-light">
-        <div id="f-fifth" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 my-col">
+        <div id="f-fifth" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 my-col">
           <img align=left src="img/fs-ph-1.png">
         </div>
-        <div id="f-sixth" class="col-xs-0 col-sm-0 col-md-6 col-lg-6 my-col">
+        <div id="f-sixth" class="col-xs-0 col-sm-0 col-md-0 col-lg-6 my-col">
           <h4 class="feature-title" style="color: #112F80">Grow and scale!</h4>
           <p class="feature-description">Just update the company's processes as you grow and scale in the simplest way.
             Changes will be with the team in seconds.</p>
@@ -216,7 +218,7 @@
   </section>
 
   <section id="ready">
-    <div class="container my-container container-x">
+    <div class="container my-container">
       <h1 align="center">READY TO START FLOWSCOPING</h1>
       <p align="center" class="how-parragraph">We have seen flowscope document detailed operating procedures, map out
         marketing campaigns, systematize tha launch of new products and streamline the hire of new team members.</p>
@@ -253,7 +255,7 @@
 
   <footer id="footer">
     <div class="navbar navbar-default navbar-fixed-bottom">
-      <div class="container">
+
         <a href="#" class="navbar-brand">
           <img class="logo img-fluid" src="img/svg/fs_logo_color.svg"></a>
         <!--<a class="footer-text" href="#">Terms of Service</a>
@@ -261,7 +263,7 @@
         <a class="footer-text" href="#">Privacy Policy</a>
         <span class="footer-text">|</span>-->
         <span class="footer-text">Copyright 2019. All rights reserved.</span>
-      </div>
+    
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -273,6 +275,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <script src="JS/menu.js"></script>
 
 
 </body>
