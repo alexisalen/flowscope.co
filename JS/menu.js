@@ -1,7 +1,7 @@
 & (function () {
     var boton = $('#menumovil');
-    menu = $('nav ul');
-    menuHeight = menu.menuHeight();
+    menu = $('header nav ul');
+    menuHeight = menu.Height();
 
     $(boton).on('click', function (e) {
         e.preventDefault();
@@ -10,8 +10,8 @@
     $(window).resize(function () {
 
         var w = $(window).width();
-        if (w > 320 && menu.is(':hidden')) {
+        if (w > 576 && menu.is(':hidden')) {
             menu.removeAttr('style');
         }
     });
-});
+}); 
