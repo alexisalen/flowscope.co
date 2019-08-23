@@ -1,6 +1,6 @@
 & (function () {
     var boton = $('#menumovil');
-    menu = $('ul');
+    menu = $('nav ul');
     menuHeight = menu.Height();
 
     $(boton).on('click', function (e) {
