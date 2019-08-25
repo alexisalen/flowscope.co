@@ -811,6 +811,10 @@ nav ul li a:hover {
     font-size: 2.5em;
   }
 
+  .container-hero .chev {
+    padding-bottom: 12em;
+  }
+
   .chev {
     font-size: 0.8em;
   }
@@ -1104,6 +1108,10 @@ nav ul li a:hover {
 
   .fa-play-circle {
     font-size: 2em;
+  }
+
+  .container-hero .chev {
+    padding-bottom: 12em;
   }
 
   .chev {
