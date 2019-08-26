@@ -25,6 +25,9 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
 
+  <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
 </head>
 
 <body>
@@ -63,7 +66,9 @@
       <div class="container-hero">
         <h1>Visualize Your Business</h1>
         <h5>Create your company flows and procedures effectively</h5>
-        <i class="fas fa-play-circle"></i></br>
+
+        <a class="video" title="" href="img/fs_vid.mp4"><i class="fas fa-play-circle"></i></a>
+
         <a href="#ready"><button>JOIN WAITING LIST</button></a></br>
         <a href="#why">
           <img class="chev" src="img/svg/fs_chevron_white.svg"></a>
@@ -72,7 +77,8 @@
     <!--<div class="lengua" style="fill:#262a2e;position: absolute;left: 0;right: 0;bottom: -49px;">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320.35px" height="50px" viewBox="0 0 320.35 50" enable-background="new 0 0 320.35 50" xml:space="preserve">
       <path d="M160.175,50C72.6,50,50.067,0,0,0l0,0h320.35l0,0C280.383,0,247.75,50,160.175,50z"></path>
-      </svg>-->
+      </svg>
+    -->
   </section>
 
   <section id="why">
@@ -181,7 +187,7 @@
     <div align=center class="container-fluid my-container padding-light">
       <div class="row my-row padding-light">
         <div id="f-first" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 my-col">
-          <img align=left src="img/fs-ph-1.png">
+          <img align=left src="img/fs_demo_1.png">
         </div>
         <div id="f-second" class="col-xs-0 col-sm-0 col-md-0 col-lg-6 my-col">
           <h4 class="feature-title title-light-blue" style="color:#0088ee">Clear flows and processes</h4>
@@ -197,13 +203,13 @@
             procedures live.</p>
         </div>
         <div class="col-xs-0 col-sm-0 col-md-0 col-lg-6 my-col">
-          <img align=left src="img/fs-ph-1.png">
+          <img align=left src="img/fs_demo_2.png">
         </div>
       </div>
 
       <div class="row my-row padding-light">
         <div id="f-fifth" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 my-col">
-          <img align=left src="img/fs-ph-1.png">
+          <img align=left src="img/fs_demo_3.png">
         </div>
         <div id="f-sixth" class="col-xs-0 col-sm-0 col-md-0 col-lg-6 my-col">
           <h4 class="feature-title" style="color: #112F80">Grow and scale!</h4>
@@ -276,12 +282,36 @@
   </script>-->
 
   <script type="text/javascript">
-    document.getElementById("menu-toggle").onclick = function () { 
-    if (document.getElementById("menu-list").style.display=="none")
+    document.getElementById("menu-toggle").onclick = function () {
+      if (document.getElementById("menu-list").style.display == "none")
         document.getElementById("menu-list").style.display = "block";
-        else
+      else
         document.getElementById("menu-list").style.display = "none";
     }
+  </script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+
+  <script id="rendered-js">
+    $('.video').magnificPopup({
+      type: 'iframe',
+
+
+      iframe: {
+        markup: '<div class="mfp-iframe-scaler">' +
+          '<div class="mfp-close"></div>' +
+          '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+          '<div class="mfp-title">Some caption</div>' +
+          '</div>'
+      },
+
+      callbacks: {
+        markupParse: function (template, values, item) {
+          values.title = item.el.attr('title');
+        }
+      }
+    });
+    //# sourceURL=pen.js
   </script>
 
 </body>
