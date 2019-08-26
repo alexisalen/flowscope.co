@@ -811,8 +811,8 @@ nav ul li a:hover {
     font-size: 2.5em;
   }
 
-  .container-hero .chev {
-    padding-bottom: 12em;
+  #hero .chev {
+    padding-bottom: 9em;
   }
 
   .chev {
@@ -1110,7 +1110,7 @@ nav ul li a:hover {
     font-size: 2em;
   }
 
-  .container-hero .chev {
+  #hero .chev {
     padding-bottom: 12em;
   }
 
