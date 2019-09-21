@@ -1232,11 +1232,107 @@ nav ul li a:hover {
     display: none;
   }
 
+}
 
-  /*NAVMOVIL-END*/
+@media screen and (max-width:330px) {
+
+  h1 {
+    font-size: 2.8em;
+  }
+
+  h2 {
+    font-size: 2.6em;
+  }
+}
+
+@media screen and (max-height:550px) {
+
+  .container-hero {
+    top: 15%;
+  }
+
+  body {
+    font-size: 13px;
+  }
+
+  /*************square**********/
+
+.square-block .squares.square1 {
+  height: 240px;
+  width: 160px;
+}
+
+.square-block .squares.square2 {
+  height: 220px;
+  width: 300px;
+}
+
+.square-block .squares.square3 {
+  height: 100px;
+  width: 100px;
+}
+
+.square-block .squares.square4 {
+  height: 150px;
+  width: 150px;
+}
+
+.square-block .squares.square5 {
+  width: 160px;
+  height: 240px;
+}
+
+.fa-play-circle {
+  font-size: 2.6em;
+  padding: 0.3em 0em 0.3em 0em;
+}
+}
+
+@media screen and (max-height:400px) {
+
+  .container-hero {
+    top: 5%;
+  }
+
+  body {
+    font-size: 12.5px;
+  }
+
+  /*************square**********/
+
+.square-block .squares.square1 {
+  opacity: 0.0;
+}
+
+.square-block .squares.square2 {
+  opacity: 0.0;
+}
+
+.square-block .squares.square3 {
+  opacity: 0.0;
+}
+
+.square-block .squares.square4 {
+  opacity: 0.0;
+}
+
+.square-block .squares.square5 {
+  opacity: 0.0;
+}
+
+.fa-play-circle {
+  font-size: 2.4em;
+  padding: 0.3em 0px 0.3em 0px;
+}
 
 
 }
+
+
+
+/*NAVMOVIL-END*/
+
+
 
 /*************SM**********/
 
