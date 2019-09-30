@@ -61,7 +61,41 @@ window.addEventListener('load', function(){
     });
 });
 
+
+OPCION 5 - Best
+-----------------------
+
+window.onload = function(){ 
+
+    var toggle = document.querySelector("#menu-toggle");
+    var menu = document.querySelector("#menu-list");
+    
+    toggle.onclick = function () {
+        if (menu.style.display = "none"){
+          menu.style.display = "block";
+        }else menu.style.display = "none";
+    }
+};
+
+OPCION 6 - Do not work
+-----------------------
+
+function navLink(){ 
+    var menu = document.querySelector("#menu-list");
+    
+    if (menu.style.display = "none"){
+        menu.style.display = "block";
+    } else menu.style.display = "none";
+}
+
+
+    var toggle = document.querySelector("#menu-toggle");
+
+    toggle.addEventListener('click', function(){
+    navLink();
+    });
 */
+
 
 
 window.onload = function(){ 
@@ -70,8 +104,9 @@ window.onload = function(){
     var menu = document.querySelector("#menu-list");
     
     toggle.onclick = function () {
-        if (menu.style.display = "none")
-          document.getElementById("menu-list").style.display = "block";
-        else document.getElementById("menu-list").style.display = "none";
-      }
+        if (menu.style.display = "none"){
+          menu.style.display = "block";
+        }else menu.style.display = "none";
+    }
 };
+
