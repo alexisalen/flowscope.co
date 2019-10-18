@@ -1,6 +1,6 @@
 'use strict'
 
- /* 
+/* 
 
 OPCION 1 - Do not work
 ----------------------
@@ -94,9 +94,6 @@ function navLink(){
     toggle.addEventListener('click', function(){
     navLink();
     });
-*/
-
-
 
 window.onload = function(){ 
 
@@ -110,3 +107,45 @@ window.onload = function(){
     }
 };
 
+var menu = $('#menu-toggle');
+var lista = $('#menu-list');
+
+menu.click(function(){
+  if (lista.css("display","none")){
+    lista.css("display","block");
+  };
+});
+
+
+var menu = $("#menu-toggle");
+var lista = $("#menu-list");
+
+menu.click(function(){
+  if (lista.css("display","none")){
+    lista.css("display","block");
+  };
+});
+
+
+*/
+
+/*JQUERY*/
+
+$(document).ready(function () {
+
+  var list = $("#menu-list");
+  var icon = $("#menu-toggle");
+
+ 
+  $("#menu-toggle").click(function () {
+    if (list.css('display') == 'none')
+    list.css("display", "block");
+
+    else $("#menu-toggle").click(function () {
+      list.css("display", "none");
+    });
+  
+
+  });
+
+});
