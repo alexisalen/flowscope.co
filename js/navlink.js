@@ -136,16 +136,10 @@ $(document).ready(function () {
   var list = $("#menu-list");
   var icon = $("#menu-toggle");
 
- 
-  $("#menu-toggle").click(function () {
-    if (list.css('display') == 'none')
-    list.css("display", "block");
+  icon.on('click', function () {
+    if (list.css('display') == 'none') {
+      list.css("display", "block")
 
-    else $("#menu-toggle").click(function () {
-      list.css("display", "none");
-    });
-  
-
+    } else list.css("display", "none");
   });
-
 });
