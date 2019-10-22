@@ -459,6 +459,11 @@ nav ul li a:hover {
   padding: 3.5%;
 }
 
+
+#menu-list {
+  display: block;
+}
+
 /*
 .lengua {
   position: absolute;
@@ -489,6 +494,9 @@ nav ul li a:hover {
 
   .feature-description {
     width: 100%;
+  }
+  #menu-list {
+    display: block;
   }
 }
 
@@ -546,6 +554,10 @@ nav ul li a:hover {
 
   .logo {
     width: 11em;
+  }
+
+  #menu-list {
+    display: block;
   }
 
 }
@@ -663,6 +675,10 @@ nav ul li a:hover {
 
   .feature-description {
     width: 100%;
+  }
+
+  #menu-list {
+    display: block;
   }
 }
 
@@ -837,6 +853,72 @@ nav ul li a:hover {
 
   /*NAVMOVIL*/
 
+  header {
+    width: 100%;
+    background: #1361BF;
+    text-decoration: none;
+    height: 4em;
+  }
+
+
+
+  header .logo {
+    align-items: left;
+    width: 10em;
+    margin-left: 10%;
+  }
+
+  /*.nav-mobile {
+    display: block;
+  }
+
+  .nav-mobile nav ul {
+    position: absolute;
+    background: #202020;
+    padding: 0;
+    margin: 0%;
+    left: 0;
+    top: 4em;
+    width: 100%;
+    z-index: 2;
+  }
+  .nav-mobile nav ul li {
+    width: 100%;
+    color: white;
+    transition: all 1s;
+    text-shadow: 1px 1px 2px #202020;
+    font-size: 1.1em;
+    font-weight: 600;
+    background: #0088ee;
+    margin: 0.5px;
+    text-decoration: none;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+  }
+
+  .nav-mobile nav ul li:hover {
+    transition: all 1s ease;
+    background: #585858;
+    color: white !important;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+  }
+
+  .nav-mobile nav ul li a {
+    color: rgb(223, 223, 223) !important;
+    text-decoration: none;
+  }
+
+  .nav-mobile nav ul li a:hover {
+    color: white !important;
+    text-decoration: none;
+  }*/
+
+  
 
   header {
     width: 100%;

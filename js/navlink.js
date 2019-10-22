@@ -126,9 +126,6 @@ menu.click(function(){
   };
 });
 
-
-*/
-
 /*JQUERY*/
 
 $(document).ready(function () {
@@ -137,9 +134,15 @@ $(document).ready(function () {
   var icon = $("#menu-toggle");
 
   icon.on('click', function () {
-    if (list.css('display') == 'none') {
-      list.css("display", "block")
-
-    } else list.css("display", "none");
+      if (list.css('display') == 'none') {
+        list.css("display", "block")
+      } else list.css("display", 'none')
   });
+
+  window.onresize = function() {
+    if (window.innerWidth > 577) {
+      list.css("display", "block")
+    } else list.css("display", "none")
+  }
+
 });
